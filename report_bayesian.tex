@@ -1,0 +1,354 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Journal Article
+% LaTeX Template
+% Version 1.4 (15/5/16)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Frits Wenneker (http://www.howtotex.com) with extensive modifications by
+% Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[twoside,twocolumn]{article}
+
+\usepackage{blindtext} % Package to generate dummy text throughout this template 
+
+\usepackage[sc]{mathpazo} % Use the Palatino font
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\linespread{1.05} % Line spacing - Palatino needs more space between lines
+\usepackage{microtype} % Slightly tweak font spacing for aesthetics
+
+\usepackage[english]{babel} % Language hyphenation and typographical rules
+
+\usepackage[hmarginratio=1:1,top=32mm,columnsep=20pt]{geometry} % Document margins
+\usepackage[hang, small,labelfont=bf,up,textfont=it,up]{caption} % Custom captions under/above floats in tables or figures
+\usepackage{booktabs} % Horizontal rules in tables
+
+\usepackage{lettrine} % The lettrine is the first enlarged letter at the beginning of the text
+
+\usepackage{enumitem} % Customized lists
+\setlist[itemize]{noitemsep} % Make itemize lists more compact
+
+\usepackage{abstract} % Allows abstract customization
+\renewcommand{\abstractnamefont}{\normalfont\bfseries} % Set the "Abstract" text to bold
+\renewcommand{\abstracttextfont}{\normalfont\small\itshape} % Set the abstract itself to small italic text
+
+\usepackage{titlesec} % Allows customization of titles
+\renewcommand\thesection{\Roman{section}} % Roman numerals for the sections
+\renewcommand\thesubsection{\roman{subsection}} % roman numerals for subsections
+\titleformat{\section}[block]{\large\scshape\centering}{\thesection.}{1em}{} % Change the look of the section titles
+\titleformat{\subsection}[block]{\large}{\thesubsection.}{1em}{} % Change the look of the section titles
+
+\usepackage{fancyhdr} % Headers and footers
+\pagestyle{fancy} % All pages have headers and footers
+\fancyhead{} % Blank out the default header
+\fancyfoot{} % Blank out the default footer
+\fancyhead[C]{Running title $\bullet$ February 2022 }%$\bullet$} % Custom header text
+\fancyfoot[RO,LE]{\thepage} % Custom footer text
+
+\usepackage{titling} % Customizing the title section
+
+\usepackage{hyperref} % For hyperlinks in the PDF
+
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+\setlength{\droptitle}{-4\baselineskip} % Move the title up
+
+\pretitle{\begin{center}\huge\bfseries} % Article title formatting
+\posttitle{\end{center}} % Article title closing formatting
+\title{Coupled Markov chains with applications to Approximate Bayesian Computation for model based clustering} % Article title
+\author{%
+\textsc{E. Bertoni, M. Caldarini, F. Di Filippo, G. Gabrielli, E. Musiari} \\[1ex] % Your name
+\normalsize Politecnico di Milano \\ % Your institution
+%\normalsize \href{mailto:john@smith.com}{john@smith.com} % Your email address
+%\and % Uncomment if 2 authors are required, duplicate these 4 lines if more
+%\textsc{Jane Smith}\thanks{Corresponding author} \\[1ex] % Second author's name
+%\normalsize University of Utah \\ % Second author's institution
+%\normalsize \href{mailto:jane@smith.com}{jane@smith.com} % Second author's email address
+}
+\date{\today} % Leave empty to omit a date
+\renewcommand{\maketitlehookd}{%
+\begin{abstract}
+\noindent \blindtext % Dummy abstract text - replace \blindtext with your abstract text
+\end{abstract}
+}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+% Print the title
+\maketitle
+
+%----------------------------------------------------------------------------------------
+%	ARTICLE CONTENTS
+%----------------------------------------------------------------------------------------
+
+\section{Introduction}
+
+\lettrine[nindent=0em,lines=3]{T}he aim of our project is to deal with two problems that can affect the same computation. The first one is to speed up Markov chain Monte Carlo (MCMC) methods using parallelization, while the second one is to manage the case in which the likelihood is computationally intractable. To solve the first problem, we used the Unbiased Markov chain Monte Carlo methods with couplings, instead for the second problem we used the Approximate Bayesian Computation.
+
+%------------------------------------------------
+
+\section{Methods}
+
+%Parlare dei metodi di ABC e di Maximal coupling (con time average) in modo separato.
+%
+%poi parlare qua di come siano stati messi insieme o nella sezione dopo?
+
+\subsection{Unbiased Markov chain Monte Carlo methods with couplings}
+
+
+Markov chain Monte Carlo (MCMC) methods provide consistent approximations of high dimensional integrals, namely as the number of iterations goes to infinity. However, these estimators can be potentially biased for any fixed number of iterations, hence the aim is to propose a general construction to produce unbiased estimators of integrals with respect to a target probability distribution. 
+
+Glynn and Rhee \cite{glynnrhee} illustrated a construction on Markov chains represented by iterated random functions; in their approach only two chains must be coupled for the proposed estimator to be unbiased, without further assumptions on the state space or target distribution. 
+Indeed, we need an unbiased estimator in order to make the parallelization possible, that will lead to a faster computation of the MCMC.
+%So the procedure consists in running 2 coupled Markov chains in each processor and the estimation is obtained calculating the mean of their convergence values.
+
+
+Hence, the goal is to estimate
+$$
+\mathbb{E}_{\pi}[h(X)] 
+= \int h(x) \pi (d x)
+.
+$$
+The estimator is based on a coupled pair of Markov chains, $(X_t)_{t\geq 0}$ and $(Y_t)_{t\geq}$, which marginally start from $\pi_0$ and evolve accordingly to $P$.
+
+
+
+It must be considered some assumptions:
+\begin{enumerate}
+	\item as $t \to \infty$, 
+	$$ \mathbb E [h(X_t)] \to \mathbb E_\pi [h(X)];$$
+	and there exists $\eta > 0$ and $D < \infty$ such that $\mathbb E [|h(X_t)|^{2 + \eta}] \leq D$ for all $t \geq 0$;
+	
+	
+	\item the chains are such that the meeting time 
+	$$
+	\tau 
+	= \inf\{t \geq 1 : X_t = Y_{t-1}\}
+	$$ 
+	satisfies $\mathbb{P}(\tau > t) \leq C \delta^t$ for all $t \geq 0$, for some constants $C < \infty$ and $\delta \in (0,1)$;
+	
+	
+	\item the chains stay together after meeting:
+	$$X_t = Y_{t-1} \quad  \forall t \geq \tau.$$
+\end{enumerate}
+
+Thanks to the previous assumptions it can be proved that:
+%\begin{align*}
+$$\mathbb{E}_{\pi}[h(X)] = \mathbb{E}[
+h(X_k) + \sum_{t = k+1}^{\tau -1}\{h(X_t) - h(Y_{t-1})\} ]
+;$$
+%\end{align*}
+and  the Rhee--Glynn estimator can be defined as:
+$$ 
+H_k(X,Y)
+= h(X_k) + \sum_{t = k+1}^{\tau -1}\{h(X_t) - h(Y_{t-1})\} 
+$$
+which is unbiased by construction.
+
+
+
+
+Time-averaged estimator can be considered as a special case of Rhee--Glynn estimator, in which $H_k(X,Y)$ can be computed for several values of $k$ from the same realization of the coupled chains, with unbiased average of them. It can used to allow computation, evaluated as:
+
+$$
+H_{k:m}(X,Y) = MCMC_{k:m} + BC_{k:m} $$
+
+
+
+
+
+%= \underbrace{
+%	\frac{1}{m-k+1}\sum_{l=k}^{m}h(X_l) }_{MCMC_{k:m}}$$ 
+%$$+ \underbrace{ 
+%	\sum_{l=k+1}^{\tau -1}\min(1, \frac{l-k}{m-k+1})\{h(X_l)-h(Y_{l-1})\} }_{BC_{k:m}}
+%$$
+where:
+$$MCMC_{k:m}=\frac{1}{m-k+1}\sum_{l=k}^{m}h(X_l)$$  is the standard MCMC average;
+ \small{$$BC_{k:m}=\sum_{l=k+1}^{\tau -1}\min(1, \frac{l-k}{m-k+1})\{h(X_l)-h(Y_{l-1})\} $$} is the bias correction;
+ 
+ $m$ is the number of iterations, smaller than the case of a biased classical MCMC method; $k-1$ is the burn-in number; $\tau$ is a random variable for the meeting time.
+
+The algorithm of the time-average estimator can be written as follows:
+\begin{enumerate}
+	\item draw $X_0$ and $Y_0$ from an initial distribution $\pi_0$ and draw $X_1 \sim P(X_0, \cdot)$;
+	\item set $t=1$: while $t<\max\{m,\tau\}$ and:
+	\begin{itemize}
+		\item[a] draw $(X_{t+1}, Y_t)\sim \bar P \{(X_t, Y_{t-1}), \cdot \}$; %\textcolor{orange}{$\qquad \bar P$ must be evaluated before!}
+		\item[b] set $t \leftarrow t+1$;
+	\end{itemize}
+	\item compute the time-averaged estimator:	 	$$
+		H_{k:m}(X,Y)
+		= \frac{1}{m-k+1}\sum_{l=k}^{m}h(X_l) $$
+		$$
+		+ \sum_{l=k+1}^{\tau -1}\min(1, \frac{l-k}{m-k+1})\{h(X_l)-h(Y_{l-1})\} .
+		$$
+	
+\end{enumerate}
+where $ \bar P$ must be evaluated before.
+
+
+	Metropolis--Hasting algorithm allows the calculation of the coupled kernel $\bar P \{(X_t, Y_{t-1}), \cdot \}$:
+	
+	\begin{enumerate}
+		\item sample $(X^\star, Y^\star) | (X_t, Y_{t-1})$ from a maximal coupling of $q(X_t, \cdot)$ and $q(Y_{t-1}, \cdot)$;
+		\item sample $U \sim \mathcal{U}([0,1])$;
+		\item if
+		$$ U
+		\leq \min\bigg \{
+		1,
+		\frac{ \pi(X^\star)q(X^\star,X_t)}{
+			\pi(X_t)q(X_t, X^\star)}
+		\bigg \}
+		$$
+		then $X_{t+1} = X^\star$; otherwise $X_t = X_{t-1}$;
+		\item if
+		$$ U
+		\leq \min\bigg \{ 
+		1,
+		\frac{ \pi(Y^\star)q(Y^\star,Y_t)}{
+			\pi(Y_t)q(Y_t, Y^\star)}
+		\bigg \}
+		$$
+		then $Y_{t+1} = Y^\star$; otherwise $Y_t = Y_{t-1}$.
+		
+	\end{enumerate}
+
+and it can be noticed that the acceptance conditions are based on the same samples from the uniform.
+
+A maximal coupling between two distributions $p$ ad $q$ on a space $\mathcal{X}$ is a distribution of a pair of random variables$(X, \space Y)$ that maximizes $\mathbb{P}(X=Y)$, subject to the marginal constraints $X\sim p$ and $Y \sim q$.
+
+We can proceed setting $p = \mathcal{N}(X_{t-1},1)$ and $q = \mathcal{N}(Y_{t-1},1)$, then:
+\begin{enumerate}
+	\item sample $X_t \sim p$;
+	\item sample $W|X_t \sim \mathcal{U}\{[0,p(X_t)]\}$;
+	\item if $W\leq q(X_t)$ then output $(X_t,X_t)$, otherwise:
+	\begin{enumerate}
+		\item sample $Y_t \sim q$;
+		\item sample $W^\star | Y_t \sim \mathcal{U}\{[0, q(Y_t)]\}$ 
+		until $W^\star > p(Y_t)$ and output $(X_t,Y_t)$.
+	\end{enumerate}
+\end{enumerate}
+and hence the output follows a maximal coupling of $p$ and $q$.
+
+Moreover, the absence of bias allows the application on time budget-constrained parallel simulation: independent unbiased estimators with finite variance can be generated on separate machines and combined into consistent and asymptotically normal estimators, leading to better results with respect to the non-parallelized version.
+
+
+
+%efficiency, parallel
+
+\subsection{Approximate Bayesian Computation}
+
+
+
+
+
+ABC methods are used to solve the problem that concerns the intractable evaluation of the likelihood function. A way to solve this issue is to use Likelihood-free methods, that are based on approximation of the likelihood.
+The algorithm of the likelihood-free rejection sampling is \\
+Input:
+\begin{itemize}
+			\item a target posterior density $\pi(\theta | y_{obs}) \propto p(y_{obs}|\theta) \pi(\theta)$, consisting of a prior distribution $\pi(\theta)$ and a procedure of generating data under the model $p(y_{obs}|\theta)$;
+			\item a proposal density $g(\theta)$, with $g(\theta)\textgreater 0 $ if $\pi(\theta | y_{obs}) \textgreater 0$;
+			\item an integer $N > 0$.
+		\end{itemize}
+Sampling for $i=1,...,N$:
+\begin{enumerate}
+			\item generate $\theta ^ {(i)} \sim g(\theta)$ from sampling density $g$;
+			\item generate $ y \sim p(y|\theta ^ {(i)})$ from the likelihood;
+			\item if $y=y_{obs}$, then accept $\theta ^ {(i)}$ with probability $\frac{\pi(\theta ^ {(i)})}{K g(\theta ^ {(i)})}$, where $K \geq \max_{\theta}{\frac{\pi(\theta)}{g(\theta)}}$; else go to 1.
+		\end{enumerate}
+Output:
+\begin{itemize}
+			\item a set of parameter vectors $\theta ^ {(1)},..., \theta ^ {(N)}$ which are samples from $\pi(\theta |y_{obs})$.
+		\end{itemize}
+
+This algorithm is not efficient for complex analysis because $y=y_{obs}$ isn't feasible???. 
+To solve this issue, is introduced a treshold h. In this way, $y_{obs}$ is accepted when his distance from y is lower or equal to h. \\
+ $${\mathbb{1}(\parallel y-y_{obs} \parallel \leq h)}$$ 
+
+The indicator function is replaced by a standard smoothing Kernel function of parameter h. \\
+$${K_h(u)}  =  \frac{1}{h}  K \left( \frac{u}{h} \right)$$
+
+Despite the introduction of the treshold h spiegare la scelta di h, non troppo piccola non troppo grande, it is difficult to have y similar $y_{obs}$: this happens only if there is a small dataset or if the likelihood is factorized into low dimentional components. \\
+The key point is to use summary statistics. Spiegare statistiche sufficienti!! The choice is a critical point: the summary statistic must be large enough to contain informations and low enough to avoid curse of dimensionality.
+
+All the changes explained above lead to a new algorithm named ABC rejection sampling, that is computed as follows:
+
+Input:
+\begin{itemize}
+				\item a target posterior density $\pi(\theta | y_{obs}) \propto p(y_{obs}|\theta) \pi(\theta)$, consisting of a prior distribution $\pi(\theta)$ and a procedure of generating data under the model $p(y_{obs}|\theta)$;
+				\item a proposal density $g(\theta)$, with $g(\theta)\textgreater 0 $ if $\pi(\theta | y_{obs}) \textgreater 0$;
+				\item an integer $N \textgreater0$;
+				\item a kernel function $K_h(u)$ and a scale parameter $h > 0$;
+				\item a low dimensional vector of summary statistics $s=S(y)$.
+			\end{itemize}
+Sampling for $i=1,...,N$:
+\begin{enumerate}
+				\item generate $\theta ^ {(i)} \sim g(\theta)$ from sampling density $g$;
+				\item generate $ y \sim p(y|\theta ^ {(i)})$ from the likelihood;
+				\item compute summary statistic $s = S(y)$;
+				\item accept $\theta ^ {(i)}$ with probability $\frac{K_h(\parallel s-s_{obs}\parallel)   \pi(\theta ^ {(i)})}{K g(\theta ^ {(i)})}$, where $K \geq K_h(0)\max_{\theta}{\frac{\pi(\theta)}{g(\theta)}}$; else go to 1.
+			\end{enumerate}
+Output:
+\begin{itemize}
+				\item a set of parameter vectors $\theta ^ {(1)},..., \theta ^ {(N)} \sim \pi_{ABC}(\theta |S_{obs})$.
+			\end{itemize}
+%------------------------------------------------
+\section{Implementation}
+
+\section{Results}
+
+
+\blindtext % Dummy text
+
+\begin{equation}
+\label{eq:emc}
+e = mc^2
+\end{equation}
+
+\blindtext % Dummy text
+
+%------------------------------------------------
+
+\section{Discussion}
+
+\subsection{Subsection One}
+
+A statement requiring citation \cite{Figueredo:2009dg}.
+\blindtext % Dummy text
+
+\subsection{Subsection Two}
+
+\blindtext % Dummy text
+
+%----------------------------------------------------------------------------------------
+%	REFERENCE LIST
+%----------------------------------------------------------------------------------------
+
+\begin{thebibliography}{99} % Bibliography - this is intentionally simple in this template
+
+\bibitem[Figueredo and Wolf, 2009]{Figueredo:2009dg}
+Figueredo, A.~J. and Wolf, P. S.~A. (2009).
+\newblock Assortative pairing and life history strategy - a cross-cultural
+  study.
+\newblock {\em Human Nature}, 20:317--330.
+ 
+\end{thebibliography}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
