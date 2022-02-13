@@ -1,0 +1,462 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Journal Article
+% LaTeX Template
+% Version 1.4 (15/5/16)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Frits Wenneker (http://www.howtotex.com) with extensive modifications by
+% Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{article}
+
+\usepackage{blindtext} % Package to generate dummy text throughout this template 
+
+\usepackage[sc]{mathpazo} % Use the Palatino font
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\linespread{1.05} % Line spacing - Palatino needs more space between lines
+\usepackage{microtype} % Slightly tweak font spacing for aesthetics
+
+\usepackage[english]{babel} % Language hyphenation and typographical rules
+
+\usepackage[hmarginratio=1:1,top=32mm,columnsep=20pt]{geometry} % Document margins
+\usepackage[hang, small,labelfont=bf,up,textfont=it,up]{caption} % Custom captions under/above floats in tables or figures
+\usepackage{booktabs} % Horizontal rules in tables
+
+\usepackage{lettrine} % The lettrine is the first enlarged letter at the beginning of the text
+
+\usepackage{enumitem} % Customized lists
+\setlist[itemize]{noitemsep} % Make itemize lists more compact
+
+\usepackage{abstract} % Allows abstract customization
+\renewcommand{\abstractnamefont}{\normalfont\bfseries} % Set the "Abstract" text to bold
+\renewcommand{\abstracttextfont}{\normalfont\small\itshape} % Set the abstract itself to small italic text
+
+\usepackage{titlesec} % Allows customization of titles
+\renewcommand\thesection{\Roman{section}} % Roman numerals for the sections
+\renewcommand\thesubsection{\roman{subsection}} % roman numerals for subsections
+\titleformat{\section}[block]{\large\scshape\centering}{\thesection.}{1em}{} % Change the look of the section titles
+\titleformat{\subsection}[block]{\large}{\thesubsection.}{1em}{} % Change the look of the section titles
+
+\usepackage{fancyhdr} % Headers and footers
+\pagestyle{fancy} % All pages have headers and footers
+\fancyhead{} % Blank out the default header
+\fancyfoot{} % Blank out the default footer
+\fancyhead[C]{Running title $\bullet$ February 2022 }%$\bullet$} % Custom header text
+\fancyfoot[RO,LE]{\thepage} % Custom footer text
+
+\usepackage{titling} % Customizing the title section
+
+\usepackage{hyperref} % For hyperlinks in the PDF
+
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+\setlength{\droptitle}{-4\baselineskip} % Move the title up
+
+\pretitle{\begin{center}\huge\bfseries} % Article title formatting
+	\posttitle{\end{center}} % Article title closing formatting
+\title{Coupled Markov chains with applications to Approximate Bayesian Computation for model based clustering} % Article title
+\author{%
+	\textsc{E. Bertoni, M. Caldarini, F. Di Filippo, G. Gabrielli, E. Musiari} \\[1ex] % Your name
+	\normalsize Politecnico di Milano \\ % Your institution
+	%\normalsize \href{mailto:john@smith.com}{john@smith.com} % Your email address
+	%\and % Uncomment if 2 authors are required, duplicate these 4 lines if more
+	%\textsc{Jane Smith}\thanks{Corresponding author} \\[1ex] % Second author's name
+	%\normalsize University of Utah \\ % Second author's institution
+	%\normalsize \href{mailto:jane@smith.com}{jane@smith.com} % Second author's email address
+}
+\date{\today} % Leave empty to omit a date
+\renewcommand{\maketitlehookd}{%
+	\begin{abstract}
+		\noindent \blindtext % Dummy abstract text - replace \blindtext with your abstract text
+	\end{abstract}
+}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+	
+	% Print the title
+	\maketitle
+	
+	%----------------------------------------------------------------------------------------
+	%	ARTICLE CONTENTS
+	%----------------------------------------------------------------------------------------
+	
+	\section{Introduction}
+	
+	\lettrine[nindent=0em,lines=3]{S}tart explaining the initial problem
+	
+	%------------------------------------------------
+	
+	\section{ABC and coupled Markov chain Monte Carlo method: mean and variance unknown}
+	\textbf{Model}:
+ 	We assume independent prior $\pi(\mu,\sigma^2)=\pi(\mu)\pi(\sigma^2)$ as follows:
+	\begin{center}
+	
+	$ Y_i \stackrel{iid}{\sim} \mathcal{N}( \mu, \sigma^2) $
+	
+	$ \mu \sim	\mathcal{N}( \mu_0, \sigma^2_0) $
+	
+	$ \sigma^2 \sim InvGa( a_0, b_0) $
+\end{center}
+	with $\mu_0=8, \sigma_0^2=3$ and $a_0=1, b_0=1$.
+	
+	
+	For the MH ABC and coupled MCMC algorithm we define as proposal distribution for the parameters' update:
+	\begin{center}
+	$ \mu^{i+1} \sim	\mathcal{N}( \mu^{i}, 0.1^2) $
+	
+	$ log(\sigma^{2(i+1)}) \sim \mathcal{N}( log(\sigma^{2(i)}), 0.1^2) $
+	\end{center}
+	the logarithm trasformation is needed to keep the proposed value of $ \sigma^2$ within its domain, 
+	which is $\mathbb{R^{+}}$
+
+	
+	\textbf{Posterior}:
+	It would be impossible to compute the marginal posterior distribution, thus we obtain the conditional posterior distribution, or full conditional distributions:
+	Given $\mathbf{y} \in \mathbb{R^{n}} $
+	\begin{center}
+		
+		$ \mu| \sigma^2,\mathbf{y} \sim	\mathcal{N}( \sigma_n\mu_n, \sigma_n^2) $
+		
+		$ \sigma^{2})| \mu,\mathbf{y} \sim InvGa( a_n,b_n) $
+		
+		where $ \mu_n= n\bar y/\sigma_0^2 + \mu_0/\sigma_0^2$
+	\end{center}		
+		and $a_n= a + n/2n=2, b_n=b + n(\mu-\bar y)^2/2 +	\sum_{i=1}^n (y-\bar y)^2/2 $
+
+	
+	
+	
+	%------------------------------------------------
+	
+	\section{Numerical Experiments}
+	In order to test our method on a more complex problem, we followed the common numerical experiment in the literature: ABC applied on the g-and-k distribution.
+	The goal is to, not only, apply ABC algorithm to this problem, but also the Unbiased coupled Markov chain Monte Carlo method.
+	
+	
+	\subsection{univariate g-and-k distribution}
+	
+	A classical numerical experiments in the ABC literature is to test the algorithm on the univariate g-and-k distribution.
+	The likelihood is intractable, therefore the distribution is defined in terms of its quantile function:
+	
+		\begin{center}
+		
+		$$ r \in (0,1) \longmapsto   a + b (1+0.8\left(\frac{1-exp(-g \cdot z(r))}{1+exp(-g\cdot z(r))}\right)(1+ z(r)^{2})^k\cdot z(r)  $$
+		\end{center}
+	
+
+	
+	where $z(r)$ is the r-th quantile of the standard Normal distribution,
+	while a and b are location and scale parameters and g and k are related to skewness and kurtosis.
+	%Skewness is a measure of symmetry, or more precisely, the lack of symmetry. ... Kurtosis is a measure of whether the data are heavy-tailed or light-tailed relative to a normal distribution. That is, data sets with high kurtosis tend to have heavy tails, or outliers
+	
+
+	Sampling from this distribution can be done by generating $z(r)$s as samples from a $\mathcal{N}(0,1)$: 
+	$z(r) \sim \mathcal{N}(0,1)$
+	
+	To complete the model we assume prior probability distribution as follows:
+	\begin{center}
+	$ a \sim \mathcal{U}([0,10])$
+	
+	$ b \sim \mathcal{U}([0,10])$
+	
+	$ g \sim \mathcal{U}([0,10])$
+	
+	$ k \sim \mathcal{U}([0,10])$
+	\end{center}
+	
+	
+	To test this distribution we sampled a set of observation $y_{obs}$ imposing the following values to the parameters, following the path of Jacob et al.:
+	
+	a=3, b=1, g=2, k=0.5
+	
+	A key point in the ABC procedure is the decision of the summary statistics, which in this case, are taken as the 10 equidistant quantiles as well as the minimum.
+	
+	As before we set 
+	
+	\textbf{Distance}: 
+		$$L^2-norm\ of\ the\ difference\ of\ S(y)\ and\ s_{obs}$$
+	  %malanobis nel multivariato
+	
+	\textbf{Kernel function}: 
+	$$
+	K(u) = 
+	\frac{1}{\sqrt{2\pi}} e^{-\frac{1}{2}u^2}, 
+	\quad K_h(u) 
+	= \frac{K(\frac u h)}{h}
+	$$
+
+	\subsection{Implementation: ABC}
+		
+	\textbf{Initialization}:
+	
+	$\theta^{(0)}=(a^{(0)},b^{(0)},g^{(0)},k^{(0)}) \sim \mathcal{U}([0,10]^{4}) \\$
+	
+	
+	
+	for j in (1,...,n):
+	
+	\begin{itemize}
+		\item $z^{(0,j)}(r) \sim \mathcal{N}(0,1)  $
+		
+		\item $ y^{(0,j)} \sim quantile function(z^{(0,j)}(r))$
+	
+	\item compute the summaries statistics:
+	$ s^{(0)} =S(y^{(0)})$
+\end{itemize}
+	Untill $Kh(\|s^{(0)}-s_{obs}\|)>0$
+	\begin{itemize}
+		\item Generate $\theta^{(0)} \sim \mathcal{U}([0,10]^{4})$ from prior density.
+		\item Generate $z^{(0)}(r) \sim \mathcal{N}(0,1)$
+		\item Generate a sample of 1000 observations such that $y \sim quantile function(z^{(0)}(r),\theta^{(0)})$
+		\item Compute $s^{(0)}=S(y)$
+	\end{itemize}
+	
+
+
+for i in (1,...,M): where M is the number of iterations
+\begin{enumerate}
+	\item given $\theta^{(i-1)}=(a^{(i-1)},b^{(i-1)},g^{(i-1)},k^{(i-1)})$
+	
+	$\theta^{(i)} \sim \mathcal{N}(\theta^{(i-1)},I)$
+	
+	for j in (1,...,n):
+	
+	$z^{(i,j)}(r) \sim \mathcal{N}(0,1)$
+	
+	$ y^{(ij)} \sim quantile function(z^{(i,j)}(r), \theta^{(i-1)})$
+	
+	
+	\item Compute the summaries  $ s^{(i)} =S(y^{(i)})$
+	
+	\item Accept $\theta^{(i)}$ with probability $\frac{Kh(\|s^{(i)}-s_{obs}\|)\pi(\theta^{(i)})}{Kh(\|s^{(i-1)}-s_{obs}\|)\pi(\theta^{(i-1)})}$
+	
+\end{enumerate} 
+
+	
+	\subsection{ABC and coupled Markov chain Monte Carlo method: inference on one parameter}
+	
+Parameters b,g,k are fixed equal to the observation parameters, while parameter a is random
+The model is the one explained above.
+
+\textbf{Initialization}:
+$ a_{1}^{(0)} \sim \mathcal{U}([0,10])$
+
+$ a_{2}^{(0)} \sim \mathcal{U}([0,10])$
+
+for j in (1,...,$n_{obs}$):
+\begin{itemize}
+	\item $z^{(0,j)}(r) \sim \mathcal{N}(0,1)  $
+	
+	\item $ y_{1}^{(0,j)} \sim quantile function(z^{(0,j)}(r))$
+	
+	\item compute $ s_{1}^{(0)} =S(y_{1}^{(0)})$
+\end{itemize}
+for j in (1,...,$n_{obs}$):
+
+\begin{itemize}
+	\item $z^{(0,j)}(r) \sim \mathcal{N}(0,1)  $
+	
+	\item $ y_{2}^{(0,j)} \sim quantile function(z^{(0,j)}(r))$
+	
+	\item compute the summaries statistics:
+	$ s_{2}^{(0)} =S(y_{2}^{(0)})$
+\end{itemize}
+
+Untill $Kh(\|s_{1}^{(0)} - s_{obs}\|)>0$:
+\begin{enumerate}
+	\item Generate $a_{1}^{(0)} \sim \mathcal{U}([0,10])$ from prior density.
+	\item Generate $z_{1}^{(0)}(r) \sim \mathcal{N}(0,1)$
+	\item Generate a sample of 1000 observations such that $y_{1} \sim quantile function(z_{1}^{(0)}(r),a_{1}^{0})$
+	\item Compute $s_{1}^{(0)}=S(y_{1})$
+	
+\end{enumerate}
+Untill $Kh(\|s_{2}^{(0)} - s_{obs}\|)>0$:
+\begin{enumerate}
+	\item Generate $a_{2}^{(0)} \sim \mathcal{U}([0,10])$ from prior density.
+	\item Generate $z_{2}^{(0)}(r) \sim \mathcal{N}(0,1)$
+	\item Generate a sample of 1000 observations such that $y_{2} \sim quantile function(z_{2}^{(0)}(r),a_{2}^{(0)})$
+	\item Compute $s_{2}^{(0)}=S(y_{2})$
+\end{enumerate}
+
+
+for i in (1,...,M):
+\begin{enumerate}
+	\item 	generate $a_{1}^{(i)},a_{2}^{(i)}$  from maximalcoupling$(a_{1}^{(i-1)},a_{2}^{(i-1)})$
+
+		for j in (1,...,n):
+		\begin{itemize}
+			\item $z^{(i,j)}(r) \sim \mathcal{N}(0,1)$
+			\item generate:
+			$ y_{1}^{(ij)} \sim quantile function(z^{(i,j)}(r), \theta^{(i-1)})$
+			$ y_{2}^{(ij)} \sim quantile function(z^{(i,j)}(r), \theta^{(i-1)})$
+			
+		\end{itemize}
+
+	\item Compute the summaries  $ s_{1}^{(i)} =S(y_{1}^{(i)})$ and $ s_{2}^{(i)} =S(y_{2}^{(i)})$
+	
+	
+	\item acceptance:
+	\begin{itemize}
+		\item Accept $a_{1}^{(i)}$ with probability $\frac{Kh(\|s_{1}^{(i)}-s_{obs}\|)\pi(a_{1}^{(i)})}{Kh(\|s_{1}^{(i-1)}- s_{obs}\|)\pi(a_{1}^{(i-1)})} $   otherwise $a_{1}^{(i)}=a_{1}^{(i-1)}$
+		
+		\item Accept $a_{2}^{(i)}$ with probability $\frac{Kh(\|s_{2}^{(i)}-s_{obs}\|)\pi(a_{2}^{(i)})}{Kh(\|s_{2}^{(i-1)}-s_{obs}\|)\pi(a_{2}^{(i-1)})} $  otherwise $  a_{2}^{(i)}=a_{2}^{(i-1)}$
+	\end{itemize}
+\end{enumerate}
+
+
+The algorithm used before to obtain a two set of observation from the parameters derived from maximal coupling, i.e. maximal coupling of the ys, is not applicable to this case since it would be difficult to find the best proposal distribution $q(\cdot),p(\cdot)$ given that there's not a density of the random variable y.
+Instead, we decide on a different approach to obtain two Markov chains of the r.v. y which after meeting would stay together.
+After sampling the paramters $\theta_{1} $ and $ \theta_{2}$ from the maximal coupling algorithm, we generate $n_{obs}$ samples $z(r) \sim \mathcal(N)(0,1)$
+and then we compute the two Markov Chains
+
+$ y_{1} \sim quantile function(z(r), \theta_{1})$
+$ y_{2} \sim quantile function(z(r),\theta_{2})$ .
+
+Therefore, if $\theta_{1}  $ and $  \theta_{2}$ from maximal coupling are identical, then also the chains $y_{1} $ and $  y_{2}$ will stay together.
+
+
+\subsection{ABC and coupled Markov chain Monte Carlo method}
+\textbf{Initialization}
+	given $\theta =( a,b,g,k )$
+
+$ \theta_{1}^{(0)} \sim \mathcal{U}([0,10]^4)$
+
+$ \theta_{2}^{(0)} \sim \mathcal{U}([0,10]^4)$
+
+for j in (1,...,$n_{obs}$):
+\begin{itemize}
+	\item $z^{(0,j)}(r) \sim \mathcal{N}(0,1)  $
+	
+	\item $ y_{1}^{(0,j)} \sim quantilefunction(z^{(0,j)}(r),\theta_{1}^{(0)})$
+	
+	\item compute $ s_{1}^{(0)} =S(y_{1}^{(0)})$
+\end{itemize}
+for j in (1,...,$n_{obs}$):
+
+\begin{itemize}
+	\item $z^{(0,j)}(r) \sim \mathcal{N}(0,1)  $
+	
+	\item $ y_{2}^{(0,j)} \sim quantile function(z^{(0,j)}(r),theta_{2}^{(0)})$
+	
+	\item compute the summaries statistics:
+	$ s_{2}^{(0)} =S(y_{2}^{(0)})$
+\end{itemize}
+
+Untill $Kh(\|s_{1}^{(0)} - s_{obs}\|)>0$:
+\begin{enumerate}
+	\item Generate $\theta_{1}^{(0)} \sim \mathcal{U}([0,10]^4)$ from prior density.
+	\item Generate $z_{1}^{(0)}(r) \sim \mathcal{N}(0,1)$
+	\item Generate a sample of 1000 observations such that $y_{1} \sim quantile function(z_{1}^{(0)}(r),\theta_{1}^{0})$
+	\item Compute $s_{1}^{(0)}=S(y_{1})$
+	
+\end{enumerate}
+Untill $Kh(\|s_{2}^{(0)} - s_{obs}\|)>0$:
+\begin{enumerate}
+	\item Generate $\theta_{2}^{(0)} \sim \mathcal{U}([0,10]^4)$ from prior density.
+	\item Generate $z_{2}^{(0)}(r) \sim \mathcal{N}(0,1)$
+	\item Generate a sample of 1000 observations such that $y_{2} \sim quantile function(z_{2}^{(0)}(r),theta_{2}^{(0)})$
+	\item Compute $s_{2}^{(0)}=S(y_{2})$
+\end{enumerate}
+
+
+for i in (1,...,M):
+\begin{enumerate}
+	\item 	generate $\theta_{1}^{(i)},\theta_{2}^{(i)}$  from maximalcoupling$(\theta_{1}^{(i-1)},\theta_{2}^{(i-1)})$
+	
+	
+		
+		for j in (1,...,n):
+		\begin{itemize}
+			\item $z^{(i,j)}(r) \sim \mathcal{N}(0,1)$
+			\item generate:
+			$ y_{1}^{(ij)} \sim quantile function(z^{(i,j)}(r), \theta_{1}^{(i-1)})$
+			$ y_{2}^{(ij)} \sim quantile function(z^{(i,j)}(r), \theta_{1}^{(i-1)})$
+			
+		\end{itemize}
+	
+	\item Compute the summaries  $ s_{1}^{(i)} =S(y_{1}^{(i)})$ and $ s_{2}^{(i)} =S(y_{2}^{(i)})$
+	
+	
+	\item acceptance:
+	\begin{itemize}
+		\item Accept $\theta_{1}^{(i)}$ with probability $\frac{Kh(\|s_{1}^{(i)}-s_{obs}\|)\pi(\theta_{1}^{(i)})}{Kh(\|s_{1}^{(i-1)}- s_{obs}\|)\pi(\theta_{1}^{(i-1)})} $   otherwise $\theta_{1}^{(i)}=\theta_{1}^{(i-1)}$
+		
+		\item Accept $\theta_{2}^{(i)}$ with probability $\frac{Kh(\|s_{2}^{(i)}-s_{obs}\|)\pi(\theta_{2}^{(i)})}{Kh(\|s_{2}^{(i-1)}-s_{obs}\|)\pi(\theta_{2}^{(i-1)})} $  otherwise $  \theta_{2}^{(i)}=\theta_{2}^{(i-1)}$
+	\end{itemize}
+\end{enumerate}
+
+	%------------------------------------------------
+	\section{Implementation}
+	
+	\section{Results}
+	
+%	\begin{table}
+%		\caption{Example table}
+%		\centering
+%		\begin{tabular}{llr}
+%			\toprule
+%			\multicolumn{2}{c}{Name} \\
+%			\cmidrule(r){1-2}
+%			First name & Last Name & Grade \\
+%			\midrule
+%			John & Doe & $7.5$ \\
+%			Richard & Miles & $2$ \\
+%			\bottomrule
+%		\end{tabular}
+%	\end{table}
+%	
+%	\blindtext % Dummy text
+%	
+	\begin{equation}
+		\label{eq:emc}
+		e = mc^2
+	\end{equation}
+	
+	\blindtext % Dummy text
+	
+	%------------------------------------------------
+	
+	\section{Discussion}
+	
+	\subsection{Subsection One}
+	
+	A statement requiring citation \cite{Figueredo:2009dg}.
+	\blindtext % Dummy text
+	
+	\subsection{Subsection Two}
+	
+	\blindtext % Dummy text
+	
+	%----------------------------------------------------------------------------------------
+	%	REFERENCE LIST
+	%----------------------------------------------------------------------------------------
+	
+	\begin{thebibliography}{99} % Bibliography - this is intentionally simple in this template
+		
+		\bibitem[Figueredo and Wolf, 2009]{Figueredo:2009dg}
+		Figueredo, A.~J. and Wolf, P. S.~A. (2009).
+		\newblock Assortative pairing and life history strategy - a cross-cultural
+		study.
+		\newblock {\em Human Nature}, 20:317--330.
+		
+	\end{thebibliography}
+	
+	%----------------------------------------------------------------------------------------
+	
+\end{document}

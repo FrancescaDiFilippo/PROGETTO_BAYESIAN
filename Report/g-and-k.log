@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.9.24)  11 FEB 2022 10:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.9.24)  12 FEB 2022 17:23
 entering extended mode
-**./report_bayesian.tex
-(report_bayesian.tex
+**./g-and-k.tex
+(g-and-k.tex
 LaTeX2e <2020-10-01> patch level 4
 L3 programming layer <2021-02-18> xparse <2020-03-03>
 (C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
@@ -412,8 +412,8 @@ tex.def
 File: l3backend-pdftex.def 2021-02-18 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count302
 \l__pdf_internal_box=\box52
-) (report_bayesian.aux)
-\openout1 = `report_bayesian.aux'.
+) (g-and-k.aux)
+\openout1 = `g-and-k.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 90.
 LaTeX Font Info:    ... okay on input line 90.
@@ -507,9 +507,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 90.
 LaTeX Info: Redefining \pageref on input line 90.
 LaTeX Info: Redefining \nameref on input line 90.
- (report_bayesian.out) (report_bayesian.out)
+ (g-and-k.out) (g-and-k.out)
 \@outlinefile=\write3
-\openout3 = `report_bayesian.out'.
+\openout3 = `g-and-k.out'.
 
 LaTeX Font Info:    Trying to load font information for OT1+pplx on input line 
 94.
@@ -555,37 +555,60 @@ Package lettrine.sty Info: Targeted height = 30.07506pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 30.07518pt (S);
 (lettrine.sty)             reported on input line 101.
-
-
-LaTeX Warning: Citation `glynnrhee' on page 1 undefined on input line 116.
-
 LaTeX Font Info:    Trying to load font information for U+fplmbb on input line 
-120.
+124.
+
 (C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ufplmbb.fd
 File: ufplmbb.fd 2003/10/30 Fontinst v1.914 font definitions for U/fplmbb.
 )
-Underfull \hbox (badness 10000) in paragraph at lines 123--125
-
- []
+Missing character: There is no n in font fplmbb!
 
 [1
 
-{C:/Users/franc/AppData/Local/MiKTeX/pdftex/config/pdftex.map}] [2] [3]
-[4] (report_bayesian.aux)
+{C:/Users/franc/AppData/Local/MiKTeX/pdftex/config/pdftex.map}]
+Underfull \hbox (badness 10000) in paragraph at lines 206--207
 
-LaTeX Warning: There were undefined references.
+ []
 
-Package rerunfilecheck Info: File `report_bayesian.out' has not changed.
-(rerunfilecheck)             Checksum: 4F1AB530BCB0B0030AAF42FE22ABFC43;1306.
+LaTeX Font Info:    Trying to load font information for TS1+pplx on input line 
+213.
+(C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1pplx.fd
+File: ts1pplx.fd 2004/09/06 font definitions for TS1/pplx.
+)
+[2] [3]
+Overfull \hbox (8.56558pt too wide) in paragraph at lines 303--306
+[]\T1/pplx/m/n/10 (-20) generate: $\OML/zplm/m/it/10 y[] \OMS/zplm/m/n/10  \OM
+L/zplm/m/it/10 quantilefunction\OT1/zplm/m/n/10 (\OML/zplm/m/it/10 z[]\OT1/zplm
+/m/n/10 (\OML/zplm/m/it/10 r\OT1/zplm/m/n/10 )\OT1/pplx/m/n/10 (-20) , \OML/zpl
+m/m/it/10 []\OT1/zplm/m/n/10 )$ $\OML/zplm/m/it/10 y[] \OMS/zplm/m/n/10  \OML
+/zplm/m/it/10 quantilefunction\OT1/zplm/m/n/10 (\OML/zplm/m/it/10 z[]\OT1/zplm/
+m/n/10 (\OML/zplm/m/it/10 r\OT1/zplm/m/n/10 )\OT1/pplx/m/n/10 (-20) , \OML/zplm
+/m/it/10 []\OT1/zplm/m/n/10 )$ 
+ []
+
+[4]
+Overfull \hbox (8.56558pt too wide) in paragraph at lines 385--388
+[]\T1/pplx/m/n/10 (-20) generate: $\OML/zplm/m/it/10 y[] \OMS/zplm/m/n/10  \OM
+L/zplm/m/it/10 quantilefunction\OT1/zplm/m/n/10 (\OML/zplm/m/it/10 z[]\OT1/zplm
+/m/n/10 (\OML/zplm/m/it/10 r\OT1/zplm/m/n/10 )\OT1/pplx/m/n/10 (-20) , \OML/zpl
+m/m/it/10 []\OT1/zplm/m/n/10 )$ $\OML/zplm/m/it/10 y[] \OMS/zplm/m/n/10  \OML
+/zplm/m/it/10 quantilefunction\OT1/zplm/m/n/10 (\OML/zplm/m/it/10 z[]\OT1/zplm/
+m/n/10 (\OML/zplm/m/it/10 r\OT1/zplm/m/n/10 )\OT1/pplx/m/n/10 (-20) , \OML/zplm
+/m/it/10 []\OT1/zplm/m/n/10 )$ 
+ []
+
+[5] [6] (g-and-k.aux)
+Package rerunfilecheck Info: File `g-and-k.out' has not changed.
+(rerunfilecheck)             Checksum: 3EE5C99DD0CC986278148D4487376D91;2398.
  ) 
 Here is how much of TeX's memory you used:
- 13604 strings out of 479334
- 211483 string characters out of 2857084
- 564540 words of memory out of 3000000
- 30551 multiletter control sequences out of 15000+200000
- 479082 words of font info for 292 fonts, out of 3000000 for 9000
+ 13599 strings out of 479334
+ 211247 string characters out of 2857084
+ 567508 words of memory out of 3000000
+ 30540 multiletter control sequences out of 15000+200000
+ 466430 words of font info for 273 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 71i,14n,74p,1014b,490s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 71i,10n,74p,1006b,490s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/franc/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:
 /Users/franc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex1
 0.pfb><C:/Users/franc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
@@ -599,9 +622,9 @@ Programs/MiKTeX/fonts/type1/public/fpl/fplrc8a.pfb><C:/Users/franc/AppData/Loca
 l/Programs/MiKTeX/fonts/type1/urw/palatino/uplb8a.pfb><C:/Users/franc/AppData/L
 ocal/Programs/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Users/franc/AppDat
 a/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on report_bayesian.pdf (4 pages, 141922 bytes).
+Output written on g-and-k.pdf (6 pages, 152103 bytes).
 PDF statistics:
- 126 PDF objects out of 1000 (max. 8388607)
- 28 named destinations out of 1000 (max. 500000)
- 106569 words of extra memory for PDF output out of 106986 (max. 10000000)
+ 163 PDF objects out of 1000 (max. 8388607)
+ 46 named destinations out of 1000 (max. 500000)
+ 88673 words of extra memory for PDF output out of 89155 (max. 10000000)
 
