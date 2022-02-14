@@ -1,0 +1,48 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {english}{}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {1}Introduction}{2}{chapter.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {2}Methods}{3}{chapter.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.1}Unbiased Markov chain Monte Carlo methods with couplings}{3}{section.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.1.1}Parallelized implementation results}{5}{subsection.2.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.2}Approximate Bayesian Computation}{6}{section.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {3}Implementation}{8}{chapter.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.1}Approximate Bayesian Computation}{8}{section.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.1.1}Univariate case}{8}{subsection.3.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{First case:}{8}{paragraph*.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Second case:}{9}{paragraph*.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.2}Multivariate case}{9}{section.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.3}Unbiased Markov chain Monte Carlo methods with coupling}{9}{section.3.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3.1}Univariate case}{9}{subsection.3.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3.2}Multivariate case}{11}{subsection.3.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3.3}Technicalities on parallel implementation}{14}{subsection.3.3.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.4}The complete method}{15}{section.3.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.4.1}Univariate case with fixed variance}{15}{subsection.3.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.4.2}Multivariate case with fixed variance}{17}{subsection.3.4.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.4.3}Univariate case with both mean and variance unknown}{17}{subsection.3.4.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {4}Numerical Experiments}{23}{chapter.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.1}Univariate g-and-k distribution}{23}{section.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1.1}ABC and coupled Markov chain Monte Carlo method}{24}{subsection.4.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Bibliography}{25}{chapter*.36}

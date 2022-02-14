@@ -2,7 +2,8 @@
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
-\documentclass {article}
+%\documentclass {article}
+\documentclass[11pt,a4paper,oneside]{report}
 %
 \usepackage[autostyle, italian=guillemets]{csquotes}
 \usepackage[backend=biber]{biblatex}
@@ -42,7 +43,7 @@
 \pagestyle{fancy} % All pages have headers and footers
 \fancyhead{} % Blank out the default header
 \fancyfoot{} % Blank out the default footer
-\fancyhead[C]{Running title $\bullet$ February 2022 }%$\bullet$} % Custom header text
+\fancyhead[C]{Coupled Markov chains with applications to Approximate Bayesian Computation for model based clustering $\bullet$ February 2022 }%$\bullet$} % Custom header text
 \fancyfoot[RO,LE]{\thepage} % Custom footer text
 
 \usepackage{titling} % Customizing the title section
@@ -56,6 +57,9 @@
 %----------------------------------------------------------------------------------------
 %	TITLE SECTION
 %----------------------------------------------------------------------------------------
+
+
+
 
 \setlength{\droptitle}{-4\baselineskip} % Move the title up
 
@@ -73,10 +77,19 @@
 }
 \date{\today} % Leave empty to omit a date
 \renewcommand{\maketitlehookd}{%
-\begin{abstract}
-\noindent \blindtext % Dummy abstract text - replace \blindtext with your abstract text
-\end{abstract}
+	
+%\begin{abstract}
+%\noindent \blindtext % Dummy abstract text - replace \blindtext with your abstract text
+%\end{abstract}
+
 }
+
+
+
+
+
+
+
 
 %----------------------------------------------------------------------------------------
 
@@ -85,26 +98,27 @@
 % Print the title
 \maketitle
 
-%----------------------------------------------------------------------------------------
-%	ARTICLE CONTENTS
-%----------------------------------------------------------------------------------------
+\tableofcontents
 
-\section{Introduction}
+
+
+\chapter{Introduction}
 
 \lettrine[nindent=0em,lines=3]{T}he aim of our project is to deal with two problems that can affect the same computation. The first one is to speed up Markov chain Monte Carlo (MCMC) methods using parallelization, while the second one is to manage the case in which the likelihood is computationally intractable. To solve the first problem, we used the Unbiased Markov chain Monte Carlo methods with couplings, instead for the second problem we used the Approximate Bayesian Computation.
 
 %------------------------------------------------
 
-\section{Methods}
+\chapter{Methods}
 
 %Parlare dei metodi di ABC e di Maximal coupling (con time average) in modo separato.
 %
 %poi parlare qua di come siano stati messi insieme o nella sezione dopo?
 
-\subsection{Unbiased Markov chain Monte Carlo methods with couplings}
+\section{Unbiased Markov chain Monte Carlo methods with couplings}
 
 
 Markov chain Monte Carlo (MCMC) methods provide consistent approximations of high dimensional integrals, namely as the number of iterations goes to infinity. However, these estimators can be potentially biased for any fixed number of iterations, hence the aim is to propose a general construction to produce unbiased estimators of integrals with respect to a target probability distribution. 
+The following results has been illustrated by Jacob, O'Leary and Atchadé in 2020 \cite{jacob2020}.
 
 Glynn and Rhee \cite{glynn2014exact} illustrated a construction on Markov chains represented by iterated random functions; in their approach only two chains must be coupled for the proposed estimator to be unbiased, without further assumptions on the state space or target distribution. 
 Indeed, we need an unbiased estimator in order to make the parallelization possible, that will lead to a faster computation of the MCMC.
@@ -215,7 +229,7 @@ where $ \bar P$ must be evaluated before.
 
 and it can be noticed that the acceptance conditions are based on the same samples from the uniform.
 
-A maximal coupling between two distributions $p$ ad $q$ on a space $\mathcal{X}$ is a distribution of a pair of random variables$(X, \space Y)$ that maximizes $\mathbb{P}(X=Y)$, subject to the marginal constraints $X\sim p$ and $Y \sim q$.
+A maximal coupling between two distributions $p$ ad $q$ on a space $\mathcal{X}$ is a distribution of a pair of random variables$(X, \space Y)$ that maximizes $\mathbb{P}(X=Y)$, subject to the marginal constraints $X\sim p$ and $Y \sim q$ \cite{zhang2020markov} \cite{Cordaro2017past}.
 
 We can proceed setting $p = \mathcal{N}(X_{t-1},1)$ and $q = \mathcal{N}(Y_{t-1},1)$, then:
 \begin{enumerate}
@@ -228,11 +242,11 @@ We can proceed setting $p = \mathcal{N}(X_{t-1},1)$ and $q = \mathcal{N}(Y_{t-1}
 		until $W^\star > p(Y_t)$ and output $(X_t,Y_t)$.
 	\end{enumerate}
 \end{enumerate}
-and hence the output follows a maximal coupling of $p$ and $q$.
+and hence the output follows a maximal coupling of $p$ and $q$. A complete discussion about this topic can be found in Rosenthal \cite{rosenthal1997faithful}.
 
 Moreover, the absence of bias allows the application on time budget-constrained parallel simulation: independent unbiased estimators with finite variance can be generated on separate machines and combined into consistent and asymptotically normal estimators, leading to better results with respect to the non-parallelized version.
 
-\subsubsection{Parallelized implementation results}
+\subsection{Parallelized implementation results}
 The unbiased Markov chain Monte Carlo method with couplings can be implemented allowing parallelization. Indeed, this method consist in generating many couples of chains, any couple can be given to a single core to be processed, instead of generating each couple sequentially.
 
 To understand how to exploit the unbiasness of time-averaged estimator $H_{k:n}(X,Y)$ and how to find a criteria for settings parameters like number of iterations or number of chains, here we report some results.
@@ -269,9 +283,9 @@ Assuming that $m > \tau$ with large probability, it is proved that we can retrie
 In other words, the bias of the MCMC algorithm can be removed at the cost of an increased variance, which can in turn be reduced by choosing sufficiently large values of $k$ and $m$. This results in a trade-off with the desired level of parallelism: one might prefer to keep $k$ and $m$ small, yielding a suboptimal efficiency for $H_{k:m}(X,Y)$, but enabling more independent copies to be generated in a given computing time.
 
 
-\subsection{Approximate Bayesian Computation}
+\section{Approximate Bayesian Computation}
 
-Likelihood-free methods are used to solve the problem that concerns the intractable evaluation of the likelihood function. A way to solve this issue is to use Approximate Bayesian Computation method, in which samples are produced form an approximation of the posterios distribution.
+Likelihood-free methods are used to solve the problem that concerns the intractable evaluation of the likelihood function. A way to solve this issue is to use Approximate Bayesian Computation method \cite{sisson2018overview}, in which samples are produced form an approximation of the posterios distribution.
 Doing so the likelihood doesn't need to be evaluated in teh algorithm.
 
 Our focus was on ABC-Markov chain Monte Carlo samplers using Metropolis–Hastings algorithm.
@@ -282,21 +296,21 @@ In the well known Metropolis–Hastings algorithm given the current chain state 
 
 Whereas the likelihood can't be evaluated, in the standard ABC computation the posterior is substituted with the approximated version $$\pi_{ABC}(\theta|s_obs) \propto \int K_h(\parallel s'-s_{obs}\parallel)Lik(\theta|s_obs)\pi(\theta) ds $$
 
-where ${K_h(u)}  =  \frac{1}{h}  K \left( \frac{u}{h} \right)$ is the standard smoothing Kernel function of parameter $ h>0$,$ Lik(\theta|s_obs)$ is the intractable likelihood function and $s=S(y)$ is the low-dimensional vector of summary statistics
+where ${K_h(u)}  =  \frac{1}{h}  K \left( \frac{u}{h} \right)$ is the standard smoothing Kernel function of parameter $ h>0$,$ Lik(\theta|s_obs)$ is the intractable likelihood function and $s=S(y)$ is the low-dimensional vector of summary statistics.
 
 Therefore we can rewrite the acceptance probability, after some semplification, as:
  $$ \alpha(\theta^{(i-1)},\theta')= \min  \{ 1, \frac{\pi_{ABC}(\theta'|s_{obs})g(\theta',\theta^{(i-1)})}{\pi_{ABC}(\theta^{(i-1)}|s_{obs})g(\theta^{(i-1)},\theta') } \} $$
  $$ =\min  \{ 1, \frac{\pi_{ABC}(K_h(\parallel s'-s_{obs}\parallel)   \pi(\theta')g(\theta',\theta^{(i-1)})}{K_h(\parallel s^{(i-1)}-s_{obs}\parallel)   \pi(\theta^{(i-1)})g(\theta^{(i-1)},\theta') } \} $$
 
-sucht that there's no direct evaluation of the likelihood function.
+such that there's no direct evaluation of the likelihood function.
 
 A key task in this computation is to set efficiently both the scaling parameter h and the summary statistics:
 the former parameter must be small to obtain the resulting estimate of the posterior closer to the true posterior. While the latter must be large enough to contain informations and low enough to avoid curse of dimensionality.
-The best choice is sufficient statistics. As sufficient statistics can be much lower dimensional than the full dataset, it is clear that greater approximation accuracy can be achieved for the same computational overheads when using low dimensional statistics.
+The best choice is to use sufficient statistics \cite{prangle2015summary}. As sufficient statistics can be much lower dimensional than the full dataset, it is clear that greater approximation accuracy can be achieved for the same computational overheads when using low dimensional statistics.
 Then the comparison $\parallel y-y_{obs} \parallel$ might be replaced by $\parallel s-s_{obs} \parallel$ without too much loss of information, but with the advantage that the dimension of S(y) is now much lower.
 
 %-----------------------
-The algorithm can be written as:
+The algorithm \cite{fan2018abc} can be written as:
 
 Input:
 			\begin{itemize}
@@ -306,6 +320,7 @@ Input:
 				\item a kernel function $K_h(u)$ and a scale parameter $h > 0$;
 				\item a low dimensional vector of summary statistics $s=S(y)$.
 			\end{itemize}
+		
 Initialize:
  Repeat until $$ K_h(\parallel s^{(0)}-s_{obs}\parallel) > 0$$ 
 	\begin{enumerate}
@@ -331,11 +346,11 @@ Output:
 
 
 %------------------------------------------------
-\section{Implementation}
+\chapter{Implementation}
 
-\subsection{Approximate Bayesian Computation}
+\section{Approximate Bayesian Computation}
 
-\subsubsection{Univariate case}
+\subsection{Univariate case}
 The univariate ABC algorithm begins with generating 1000 samples from a Normal Distribution:
 $$
 	y_{obs} \sim  \mathcal{N} (\mu_{obs}, \sigma_{obs} ^2)
@@ -360,13 +375,13 @@ The distance is the $L^2-$norm of the difference between $s_{0}$ and $s_{obs}$ a
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=\textwidth]{immagini_abc/h0.2}	
+%	\includegraphics[width=\textwidth]{immagini_abc/h0.2}	
 	\caption{}
 	\label{abch02}
 \end{figure}
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=\textwidth]{immagini_abc/sample0.2}	
+%	\includegraphics[width=\textwidth]{immagini_abc/sample0.2}	
 	\caption{}
 	\label{abcsample02}
 \end{figure}
@@ -380,13 +395,13 @@ As mentioned in the chapter 2, the choice of parameter h is important.  \\
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=\textwidth]{immagini_abc/h1.8}	
+%	\includegraphics[width=\textwidth]{immagini_abc/h1.8}	
 	\caption{}
 	\label{abch18}
 \end{figure}
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=\textwidth]{immagini_abc/sample1.8}	
+%	\includegraphics[width=\textwidth]{immagini_abc/sample1.8}	
 	\caption{}
 	\label{abch18}
 \end{figure}
@@ -400,13 +415,13 @@ As seen in \ref{abch18}, a larger $h$ led to a poor approximation due to the acc
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=\textwidth]{immagini_abc/S10.5}	
+%	\includegraphics[width=\textwidth]{immagini_abc/S10.5}	
 	\caption{}
 	%\label{abch18}
 \end{figure}
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=\textwidth]{immagini_abc/sampleS10.5}	
+%	\includegraphics[width=\textwidth]{immagini_abc/sampleS10.5}	
 	\caption{}
 	%\label{abch18}
 \end{figure}
@@ -416,26 +431,26 @@ The posterior distribution has $\mu=10.2527$ and $\sigma^2=0.0298$
 \begin{center} Input parameters: $\mu_{0}=8,\  \sigma_{0}^2=4,\  \mu_{obs}=10,\  \sigma_{obs}^2 =3,\ h=1.8$  \end{center}
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=\textwidth]{immagini_abc/S11.8}	
+%	\includegraphics[width=\textwidth]{immagini_abc/S11.8}	
 	\caption{}
 	%\label{abch18}
 \end{figure}
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=\textwidth]{immagini_abc/sampleS11.8}	
+%	\includegraphics[width=\textwidth]{immagini_abc/sampleS11.8}	
 	\caption{}
 	%\label{abch18}
 \end{figure}
 
-\subsection{Multivariate case}
+\section{Multivariate case}
 The multivariate ABC method is an extension of the univariate one. Samples has been generated from a Multivariate Normal Distribution.\\
 The distance is the Mahalanobis distance between  $s_{0}$ and $s_{obs}$ and the summary statistic chosen is the sample mean.
 
 
 
-\subsection{Unbiased Markov chain Monte Carlo methods with coupling}
+\section{Unbiased Markov chain Monte Carlo methods with coupling}
 
-\subsubsection{Univariate case}
+\subsection{Univariate case}
 
 The idea is to apply the method of coupling to a Metropolis-Hasting MCMC, obtaining two chains ${X_t}, \: {Y_t}$ that can be used to compute the time-average estimator $H_{k:m}(X,Y)$ defined above. In this way we can achieve an estimate of the unknow parameter \emph{k}.
 
@@ -512,7 +527,7 @@ In figure \ref{coupl1} we can see that the chains meet after few iterations and 
 
 \newpage
 
-\subsubsection{Multivariate case}
+\subsection{Multivariate case}
 
 The univariate case can be easily extended to multivariate dimension, we used the following bivariate model:
 $$ \boldsymbol{Y} | \boldsymbol{\mu} \overset{iid}{\sim} \mathcal{N}(\mu, \Sigma_{obs} ) \quad \text{for } i = 1 ... n $$
@@ -601,7 +616,7 @@ Here the plot of the chains of the two variables, then the plots of the posterio
 
 \clearpage
 
-\subsubsection{Technicalities on parallel implementation}
+\subsection{Technicalities on parallel implementation}
 
 In order to achieve parallelization, our choice is to use Python's standard package for parallelization, called multiprocessing (https://docs.python.org/3/library/multiprocessing.html). The Python's architecture does not allow multitreading parallelization, which would be optimal in terms of memory efficiency.
 
@@ -612,9 +627,9 @@ As we achieved the goal to parallelize the computation we do not attempt any oth
  
 \clearpage
 
-\subsection{The complete method}
+\section{The complete method}
 
-\subsubsection{Univariate case with fixed variance}
+\subsection{Univariate case with fixed variance}
 
 We implemented an MCMC algorithm using Approximate Bayesian Computation to approximate the likelihood and Coupled Markov chanis.
 The algorithm we computed: 
@@ -712,7 +727,7 @@ The results are shown in the following plots.
 \begin{figure}[h!]
 	%	{ \textbf{Coupled chains} }
 	\centering
-	\includegraphics[width=\textwidth]{abc_coupling/2catabccoupling}	
+	\includegraphics[width=\textwidth]{abc_coupling/coupling_abc_univ_chain_meeeting}	
 	\caption{Coupled chains}
 	\label{complete1}
 	
@@ -721,16 +736,25 @@ The results are shown in the following plots.
 \begin{figure}[h!]
 	%	{ %\textbf{Complete sampling}}
 	\centering
-	\includegraphics[width=\textwidth]{abc_coupling/histabccoupling}
-	\caption{Sampling histogram with real distribution}   %without parallelization?
+	\includegraphics[width=\textwidth]{abc_coupling/coupling_abc_univ_sampling}
+	\caption{Sampling}
 	\label{complete2}
 \end{figure}
 
-We can see in figure \ref{complete1} that the chains meet after few iterations remaining together while they converge to the posterior mean $\mu_{n}$. In figure \ref{complete2} we can see that our model approximates quite well the real distribution, even if the computation could be improved increasing the number of iterations performing a parallelization. %?
+\begin{figure}[h!]
+	%	{ %\textbf{Complete sampling}}
+	\centering
+	\includegraphics[width=\textwidth]{abc_coupling/coupling_abc_univ_histogram_posterior}
+	\caption{Sampling histogram with real distribution}  
+	\label{complete3}
+\end{figure}
+
+
+We can see in figure \ref{complete1} that the chains meet after few iterations remaining together while they converge to the posterior mean $\mu_{n}$. In figure \ref{complete3} we can see that our model approximates well the real distribution.
 
 
 
-\subsubsection{Multivariate case with fixed variance}
+\subsection{Multivariate case with fixed variance}
 
 The complete method can be easily extended to the multivariate version. We performed the same bivariate model that we used in the single multivariate coupling.
 $$ \boldsymbol{Y} | \boldsymbol{\mu} \overset{iid}{\sim} \mathcal{N}(\mu, \Sigma_{obs} ) \quad \text{for } i = 1 ... n $$
@@ -807,7 +831,7 @@ Here the plot of the chains of the two variables, then the plots of the posterio
 
 
 
-\subsubsection{Univariate case with both mean and variance unknown}
+\subsection{Univariate case with both mean and variance unknown}
 
 This is also an extension of the Univariate case with fixed variance where $\theta = (\mu,\sigma)$
 
@@ -941,12 +965,12 @@ In \ref{muhistdouble} and \ref{sigmahistdouble} we can observe the sampled poste
 
 
 
-	\section{Numerical Experiments}
+\chapter{Numerical Experiments}
 In order to test our method on a more complex problem, we followed the common numerical experiment in the literature: ABC applied on the g-and-k distribution.
 The goal is to, not only, apply ABC algorithm to this problem, but also the Unbiased coupled Markov chain Monte Carlo method.
 
 
-\subsection{Univariate g-and-k distribution}
+\section{Univariate g-and-k distribution}
 
 A classical numerical experiments in the ABC literature is to test the algorithm on the univariate g-and-k distribution.
 The likelihood is intractable, therefore the distribution is defined in terms of its quantile function:
@@ -1066,7 +1090,7 @@ $$
 
 
 
-\subsubsection{ABC and coupled Markov chain Monte Carlo method}
+\subsection{ABC and coupled Markov chain Monte Carlo method}
 given $\theta =( a,b,g,k )$
 \begin{enumerate}
 
@@ -1138,7 +1162,7 @@ $$ y_{2} \sim quantile function(z(r),\theta_{2})$$
 Therefore, if $\theta_{1}  $ and $  \theta_{2}$ from maximal coupling are identical, then also the chains $y_{1} $ and $  y_{2}$ will stay together.
 
 \newpage
-\printbibliography
+\printbibliography[heading=bibintoc]
 
 % Bibliography - this is intentionally simple in this template
 
