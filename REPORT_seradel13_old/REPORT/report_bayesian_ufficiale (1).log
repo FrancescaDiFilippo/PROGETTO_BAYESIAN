@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.9.24)  14 FEB 2022 10:13
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.9.24)  14 FEB 2022 09:55
 entering extended mode
 **"./report_bayesian_ufficiale (1).tex"
 (report_bayesian_ufficiale (1).tex
@@ -1223,76 +1223,120 @@ ate/coupling_abc_mult_chain_meeeting_2.png> <./immagini_abc_coupling_multivaria
 te/coupling_abc_mult_sampling_1.png> <./immagini_abc_coupling_multivariate/coup
 ling_abc_mult_sampling_2.png>]
 Missing character: There is no n in font fplmbb!
- [19 <./immagini_abc_coupling_multivariate/coupling_abc_mult_histogram_1.png> <
-./immagini_abc_coupling_multivariate/coupling_abc_mult_histogram_2.png>]
-<doublecoupling_pack/doublecoupling_mu_chain_meeting.png, id=290, 867.24pt x 28
-9.08pt>
-File: doublecoupling_pack/doublecoupling_mu_chain_meeting.png Graphic file (typ
-e png)
-<use doublecoupling_pack/doublecoupling_mu_chain_meeting.png>
-Package pdftex.def Info: doublecoupling_pack/doublecoupling_mu_chain_meeting.pn
-g  used on input line 878.
-(pdftex.def)             Requested size: 430.00462pt x 143.33543pt.
-<doublecoupling_pack/doublecoupling_sampling_mu.png, id=291, 867.24pt x 289.08p
-t>
-File: doublecoupling_pack/doublecoupling_sampling_mu.png Graphic file (type png
-)
-<use doublecoupling_pack/doublecoupling_sampling_mu.png>
-Package pdftex.def Info: doublecoupling_pack/doublecoupling_sampling_mu.png  us
-ed on input line 886.
-(pdftex.def)             Requested size: 430.00462pt x 143.33543pt.
-<doublecoupling_pack/doublecoupling_mu_histogram_kernel.png, id=292, 867.24pt x
- 289.08pt>
-File: doublecoupling_pack/doublecoupling_mu_histogram_kernel.png Graphic file (
-type png)
-<use doublecoupling_pack/doublecoupling_mu_histogram_kernel.png>
-Package pdftex.def Info: doublecoupling_pack/doublecoupling_mu_histogram_kernel
-.png  used on input line 895.
-(pdftex.def)             Requested size: 430.00462pt x 143.33543pt.
+
+
+! LaTeX Error: File `doublecoupling_pack/doublecoupling_mu_chain_meeting' not f
+ound.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.868 ...ing_pack/doublecoupling_mu_chain_meeting}
+                                                  
+I could not locate the file with any of these extensions:
+.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<doublecoupling_pack/doublecoupling_sigma_chain_meeting.png, id=293, 867.24pt x
- 289.08pt>
-File: doublecoupling_pack/doublecoupling_sigma_chain_meeting.png Graphic file (
-type png)
-<use doublecoupling_pack/doublecoupling_sigma_chain_meeting.png>
-Package pdftex.def Info: doublecoupling_pack/doublecoupling_sigma_chain_meeting
-.png  used on input line 909.
-(pdftex.def)             Requested size: 430.00462pt x 143.33543pt.
+
+! LaTeX Error: File `doublecoupling_pack/doublecoupling_sampling_mu' not found.
+
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.877 ...coupling_pack/doublecoupling_sampling_mu}
+                                                  
+I could not locate the file with any of these extensions:
+.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<doublecoupling_pack/doublecoupling_sampling_sigma.png, id=294, 867.24pt x 289.
-08pt>
-File: doublecoupling_pack/doublecoupling_sampling_sigma.png Graphic file (type 
-png)
-<use doublecoupling_pack/doublecoupling_sampling_sigma.png>
-Package pdftex.def Info: doublecoupling_pack/doublecoupling_sampling_sigma.png 
- used on input line 917.
-(pdftex.def)             Requested size: 430.00462pt x 143.33543pt.
+
+! LaTeX Error: File `doublecoupling_pack/doublecoupling_mu_histogram_kernel' no
+t found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.887 ..._pack/doublecoupling_mu_histogram_kernel}
+                                                  
+I could not locate the file with any of these extensions:
+.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<doublecoupling_pack/doublecoupling_sigma_histogram_kernel.png, id=295, 867.24p
-t x 289.08pt>
-File: doublecoupling_pack/doublecoupling_sigma_histogram_kernel.png Graphic fil
-e (type png)
-<use doublecoupling_pack/doublecoupling_sigma_histogram_kernel.png>
-Package pdftex.def Info: doublecoupling_pack/doublecoupling_sigma_histogram_ker
-nel.png  used on input line 926.
-(pdftex.def)             Requested size: 430.00462pt x 143.33543pt.
+
+! LaTeX Error: File `doublecoupling_pack/doublecoupling_sigma_chain_meeting' no
+t found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.899 ..._pack/doublecoupling_sigma_chain_meeting}
+                                                  
+I could not locate the file with any of these extensions:
+.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[20 <./doublecoupling_pack/doublecoupling_mu_chain_meeting.png> <./doublecoupli
-ng_pack/doublecoupling_sampling_mu.png>] [21 <./doublecoupling_pack/doublecoupl
-ing_mu_histogram_kernel.png> <./doublecoupling_pack/doublecoupling_sigma_chain_
-meeting.png> <./doublecoupling_pack/doublecoupling_sampling_sigma.png>]
-[22 <./doublecoupling_pack/doublecoupling_sigma_histogram_kernel.png>] [23]
 
-LaTeX Warning: Empty bibliography on input line 1141.
+! LaTeX Error: File `doublecoupling_pack/doublecoupling_sampling_sigma' not fou
+nd.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.908 ...pling_pack/doublecoupling_sampling_sigma}
+                                                  
+I could not locate the file with any of these extensions:
+.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+! LaTeX Error: File `doublecoupling_pack/doublecoupling_sigma_histogram_kernel'
+ not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.918 ...ck/doublecoupling_sigma_histogram_kernel}
+                                                  
+I could not locate the file with any of these extensions:
+.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[19 <./immagini_abc_coupling_multivariate/coupling_abc_mult_histogram_1.png> <.
+/immagini_abc_coupling_multivariate/coupling_abc_mult_histogram_2.png>]
+[20] [21]
+
+LaTeX Warning: Empty bibliography on input line 1137.
 
 (report_bayesian_ufficiale (1).aux)
 
@@ -1315,13 +1359,13 @@ ml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 22873 strings out of 479334
- 391745 string characters out of 2857084
- 1161215 words of memory out of 3000000
- 39457 multiletter control sequences out of 15000+200000
- 491485 words of font info for 395 fonts, out of 3000000 for 9000
+ 22927 strings out of 479334
+ 394462 string characters out of 2857084
+ 1160613 words of memory out of 3000000
+ 39505 multiletter control sequences out of 15000+200000
+ 491262 words of font info for 392 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 71i,13n,74p,1030b,1685s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 71i,13n,74p,1030b,1691s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/franc/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:
 /Users/franc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex1
 0.pfb><C:/Users/franc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
@@ -1337,10 +1381,10 @@ a/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplb8a.pfb><C:/Users/franc/App
 Data/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplbi8a.pfb><C:/Users/franc
 /AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Users/fr
 anc/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on "report_bayesian_ufficiale (1).pdf" (23 pages, 1064340 bytes)
-.
+Output written on "report_bayesian_ufficiale (1).pdf" (21 pages, 879136 bytes).
+
 PDF statistics:
- 392 PDF objects out of 1000 (max. 8388607)
- 106 named destinations out of 1000 (max. 500000)
- 113468 words of extra memory for PDF output out of 128383 (max. 10000000)
+ 368 PDF objects out of 1000 (max. 8388607)
+ 104 named destinations out of 1000 (max. 500000)
+ 113438 words of extra memory for PDF output out of 128383 (max. 10000000)
 

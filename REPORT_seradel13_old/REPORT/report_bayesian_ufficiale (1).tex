@@ -827,13 +827,9 @@ $
 \mu_{obs} = 10, \;
 \sigma_{obs} ^2 = 3
 $.
-As sufficient summary statistics we set (sample mean, sample variance), a $L^2-$norm as distance function and a Gaussian kernel function with scaling parameter h = 0.3 
+As sufficient summary statistics we set (sample mean, sample variance), a $L^2-$norm as distance function and a Gaussian kernel function
 
-The method has been implemented with the following setting, with parallelization:\\
-Couples of chains: $4$;\\
-Samples from each couple: $1000$;\\
-Burnin: $100$.
-
+	
 For the MH ABC and coupled MCMC algorithm we define as proposal distribution for the parameters' update:
 \begin{center}
 	$ \mu^{i+1} \sim	\mathcal{N}( \mu^{i}, 0.1^2) $
@@ -843,90 +839,90 @@ For the MH ABC and coupled MCMC algorithm we define as proposal distribution for
 the logarithm trasformation is needed to keep the proposed value of $ \sigma^2$ within its domain, 
 which is $\mathbb{R^{+}}$
 
-
 	
 \textbf{Posterior}:
 It would be impossible to compute the marginal posterior distribution, thus we obtain the conditional posterior distribution, or full conditional distributions:
 Given $\mathbf{y} \in \mathbb{R^{n}} $
-
+\begin{center}
 	
-	$$ \mu| \sigma^2,\mathbf{y} \sim	\mathcal{N}( \sigma_n\mu_n, \sigma_n^2) $$
+	$ \mu| \sigma^2,\mathbf{y} \sim	\mathcal{N}( \sigma_n\mu_n, \sigma_n^2) $
 	
-	$$ \sigma^{2} \mu,\mathbf{y} \sim InvGa( a_n,b_n)$$
+	$ \sigma^{2})| \mu,\mathbf{y} \sim InvGa( a_n,b_n) $
 	
 	where $ \mu_n= n\bar y/\sigma_0^2 + \mu_0/\sigma_0^2$
-		
-and $a_n= a + n/2n=2, \  b_n=b + n\frac{(\mu-\bar y)^2}{2} +	\frac{\sum_{i=1}^n (y-\bar y)^2}2{} $
+\end{center}		
+and $a_n= a + n/2n=2, b_n=b + n(\mu-\bar y)^2/2 +	\sum_{i=1}^n (y-\bar y)^2/2 $
 
 
-\textbf{Results}:
-Time Averaged Estimators mean obtained:
-$$ \mathbb{E}[H_{k:m}(X_{\mu}, Y_{\mu})] \simeq 9.8   % non so perchè non vada
-$$
-$$ \mathbb{E}[H_{k:m}(X_{\sigma^2}, Y_{\sigma^2})] \simeq 2.56   % non so perchè non vada
-$$
 
 
-As seen in the plots \ref{mucoupledchains} and \ref{sigmacoupledchains} coupled chains meet after few iterations.
-In \ref{muhistdouble} and \ref{sigmahistdouble} we can observe the sampled posterior distribution and the estimated one.
+
+%----- MU ------
 
 
-%----- MU ---------
+
+
 \begin{figure}[h!]
 	%	{ %\textbf{Complete sampling}}
 	\centering
 	\includegraphics[width=\textwidth]{doublecoupling_pack/doublecoupling_mu_chain_meeting}
-	\caption{Coupled chains for parameter $\mu$ }   %without parallelization?
-	\label{mucoupledchains}
+	\caption{A Coupled chains for parameter $\mu$ }   %without parallelization?
+	\label{muchainsdouble}
 \end{figure}
+
 
 \begin{figure}[h!]
 	%	{ %\textbf{Complete sampling}}
 	\centering
 	\includegraphics[width=\textwidth]{doublecoupling_pack/doublecoupling_sampling_mu}
-	\caption{Sampling from all accepted parallelized chains for parameter $\mu$ }   %without parallelization?
-	\label{muallsamdouble}
+	\caption{Sampling from all the accepted parallelized chains for parameter $\mu$ }   %without parallelization?
+	\label{muallsampledouble}
 \end{figure}
+
 
 
 \begin{figure}[h!]
 	%	{ %\textbf{Complete sampling}}
 	\centering
 	\includegraphics[width=\textwidth]{doublecoupling_pack/doublecoupling_mu_histogram_kernel}
-	\caption{Histogram for parameter $\mu$: Sampling from all accepted parallelized chains with estimated kernel }   %without parallelization?
+	\caption{histogram for parameter $\mu$: Sampling from all the accepted parallelized chains with estimated kernel}   %without parallelization?
 	\label{muhistdouble}
 \end{figure}
 
 
 
+%----- SIGMA-----
 
-
-
-%---- SIGMA ---
 \begin{figure}[h!]
 	%	{ %\textbf{Complete sampling}}
 	\centering
 	\includegraphics[width=\textwidth]{doublecoupling_pack/doublecoupling_sigma_chain_meeting}
-	\caption{Coupled chains for parameter $\sigma^2$ }   %without parallelization?
-	\label{sigmacoupledchains}
+	\caption{A Coupled chains for parameter $\sigma^2$ }   %without parallelization?
+	\label{sigmachainsdouble}
 \end{figure}
+
 
 \begin{figure}[h!]
 	%	{ %\textbf{Complete sampling}}
 	\centering
 	\includegraphics[width=\textwidth]{doublecoupling_pack/doublecoupling_sampling_sigma}
-	\caption{Sampling from all accepted parallelized chains for parameter $\sigma^2$ }   %without parallelization?
-	\label{sigmaallsamdouble}
+	\caption{Sampling from all the accepted parallelized chains for parameter $\sigma^2$  }   %without parallelization?
+	\label{sigmaallsampledouble}
 \end{figure}
+
 
 
 \begin{figure}[h!]
 	%	{ %\textbf{Complete sampling}}
 	\centering
 	\includegraphics[width=\textwidth]{doublecoupling_pack/doublecoupling_sigma_histogram_kernel}
-	\caption{Histogram for parameter $\sigma^2$: Sampling from all accepted parallelized chains with estimated kernel }   %without parallelization?
+	\caption{histogram for parameter $\sigma^2$ : Sampling from all the accepted parallelized chains with estimated kernel}   %without parallelization?
 	\label{sigmahistdouble}
 \end{figure}
+
+
+
+
 
 
 

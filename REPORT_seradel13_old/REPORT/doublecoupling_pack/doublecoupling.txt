@@ -1,0 +1,48 @@
+OSSERVAZIONI:
+
+mu_obs = 10
+sigma_obs = \sqrt{3}
+
+numero delle osservazioni: 100
+
+PRIOR
+
+c = 1
+d = 1
+mu_0 = 8
+\sigma_0 = 2     (ossia \sqrt{4})
+
+k = 5
+
+SETTINGS:
+
+h = 0.3 
+
+iterazioni = 1000
+burnin = 100
+
+4 coppie eseguite
+4 coppier andate a buon fine
+dimensione finale del campionamento = 3600
+
+RISULTATI:
+time averaged estimator MU: 9.800842377089388
+time averaged estimator SIGMA: 2.5634439239239093
+
+
+
+
+
+GRAFICI RIPORTATI:
+
+doublecoupling_sampling_mu & doublecoupling_sampling_sigma
+plot dei sampling finali per mu e per sigma
+
+doublecoupling_mu_histogram & doublecoupling_sigma_histogram
+plot degli istogrammi dei campionamenti, per mu e per sigma
+
+doublecoupling_mu_histogram_kernel & doublecoupling_sigma_histogram_kernel
+come il precedente con l'aggiunta del kernel estimation grafico, per mu e sigma
+
+doublecoupling_mu_chain_meeting & doublecoupling_sigma_chain_meeting
+è il plot delle due coppie di catene che vanno a convergenza, una per mu e una per sigma
