@@ -249,44 +249,42 @@
 %-----------------------------------
 
 	
-	\begin{frame}
-		\frametitle{Study case}
-		
-		\textbf{Summary statistics}: Sample mean, Sample Variance \\
+\begin{frame}
+	\frametitle{Study case}
 	
-	
-		\textbf{Distance}: $L^2-norm$
- %malanobis nel multivariato
-		
-		\textbf{Kernel}: $
-		K(u) = 
-		\frac{1}{\sqrt{2\pi}} e^{-\frac{1}{2}u^2}, 
-		\quad K_h(u) 
-		= \frac{K(\frac{u}{h})}{h}
-		$
-		%1/(np.sqrt(2*math.pi))np.exp(-1/2*u*2)
-%		
+	\textbf{Summary statistics}: Sample mean, Sample Variance \\
 
-		\textbf{Proposal distribution}:	$	 \begin{bmatrix}    % non so perchè non vada
-		\mu' \\ log(\sigma^2')	\end{bmatrix} 
+
+	\textbf{Distance}: $L^2-norm$
+	%malanobis nel multivariato
+	
+	\textbf{Kernel}: $
+	K(u) = 
+	\frac{1}{\sqrt{2\pi}} e^{-\frac{1}{2} u^2}, 
+	\quad K_h(u) 
+	= \frac{K(\frac{u}{h})}{h}
+	$
+	%1/(np.sqrt(2*math.pi))np.exp(-1/2*u*2)		
+
+	\textbf{Proposal distribution}:	$	% \begin{bmatrix}    % non so perchè non vada
+%	\mu' \\ log(\sigma^2 ')	\end{bmatrix} 
 	\sim \mathcal{N}\left( \begin{bmatrix}    % non so perchè non vada
-		\mu^{(i)} \\ log(\sigma^{2(i)})
-	\end{bmatrix}, 0.1^2\cdot\mathcal{I}\right)$
-%	\hspace*{4cm}	$  y' \sim \mathcal{N}(\mu^{(i)} , \sigma^{2(i)})$
+	\mu^{(i)} \\ log(\sigma^{2(i)})
+	\end{bmatrix}, 0.1^2 \cdot\mathcal{I}\right)$
+	%	\hspace*{4cm}	$  y' \sim \mathcal{N}(\mu^{(i)} , \sigma^{2(i)})$
+
+\pause
+
 	
-	\pause
+	\begin{block}{Dataset}
 	
+	100 samples generated from a Gaussian distribution:
 		
-		\begin{block}{Dataset}
-		
-			100 samples generated from a Gaussian distribution:
-			
-				$$ Y_{obs} \sim \mathcal{N}(\mu_{obs}, \sigma_{obs}^{2}) $$
-				$$	\mu_{obs} = 10,	\sigma_{obs}^{2} = 3	$$
-		
-		\end{block}
-		
-	\end{frame}
+		$$ Y_{obs} \sim \mathcal{N}(\mu_{obs}, \sigma_{obs}^{2}) $$
+		$$	\mu_{obs} = 10,	\sigma_{obs}^{2} = 3	$$
+	
+	\end{block}
+\end{frame}
 	
 %-------------------------------------------------------------------
 \begin{frame}
