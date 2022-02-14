@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.9.24)  14 FEB 2022 09:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.9.24)  14 FEB 2022 09:55
 entering extended mode
 **"./report_bayesian_ufficiale (1).tex"
 (report_bayesian_ufficiale (1).tex
@@ -1223,11 +1223,120 @@ ate/coupling_abc_mult_chain_meeeting_2.png> <./immagini_abc_coupling_multivaria
 te/coupling_abc_mult_sampling_1.png> <./immagini_abc_coupling_multivariate/coup
 ling_abc_mult_sampling_2.png>]
 Missing character: There is no n in font fplmbb!
- [19 <./immagini_abc_coupling_multivariate/coupling_abc_mult_histogram_1.png> <
-./immagini_abc_coupling_multivariate/coupling_abc_mult_histogram_2.png>] [20] [
-21]
 
-LaTeX Warning: Empty bibliography on input line 1055.
+
+! LaTeX Error: File `doublecoupling_pack/doublecoupling_mu_chain_meeting' not f
+ound.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.868 ...ing_pack/doublecoupling_mu_chain_meeting}
+                                                  
+I could not locate the file with any of these extensions:
+.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+! LaTeX Error: File `doublecoupling_pack/doublecoupling_sampling_mu' not found.
+
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.877 ...coupling_pack/doublecoupling_sampling_mu}
+                                                  
+I could not locate the file with any of these extensions:
+.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+! LaTeX Error: File `doublecoupling_pack/doublecoupling_mu_histogram_kernel' no
+t found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.887 ..._pack/doublecoupling_mu_histogram_kernel}
+                                                  
+I could not locate the file with any of these extensions:
+.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+! LaTeX Error: File `doublecoupling_pack/doublecoupling_sigma_chain_meeting' no
+t found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.899 ..._pack/doublecoupling_sigma_chain_meeting}
+                                                  
+I could not locate the file with any of these extensions:
+.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+! LaTeX Error: File `doublecoupling_pack/doublecoupling_sampling_sigma' not fou
+nd.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.908 ...pling_pack/doublecoupling_sampling_sigma}
+                                                  
+I could not locate the file with any of these extensions:
+.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+! LaTeX Error: File `doublecoupling_pack/doublecoupling_sigma_histogram_kernel'
+ not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.918 ...ck/doublecoupling_sigma_histogram_kernel}
+                                                  
+I could not locate the file with any of these extensions:
+.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[19 <./immagini_abc_coupling_multivariate/coupling_abc_mult_histogram_1.png> <.
+/immagini_abc_coupling_multivariate/coupling_abc_mult_histogram_2.png>]
+[20] [21]
+
+LaTeX Warning: Empty bibliography on input line 1137.
 
 (report_bayesian_ufficiale (1).aux)
 
@@ -1250,13 +1359,13 @@ ml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 22806 strings out of 479334
- 388825 string characters out of 2857084
+ 22927 strings out of 479334
+ 394462 string characters out of 2857084
  1160613 words of memory out of 3000000
- 39409 multiletter control sequences out of 15000+200000
+ 39505 multiletter control sequences out of 15000+200000
  491262 words of font info for 392 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 71i,13n,74p,1030b,1685s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 71i,13n,74p,1030b,1691s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/franc/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:
 /Users/franc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex1
 0.pfb><C:/Users/franc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
@@ -1272,10 +1381,10 @@ a/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplb8a.pfb><C:/Users/franc/App
 Data/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplbi8a.pfb><C:/Users/franc
 /AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Users/fr
 anc/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on "report_bayesian_ufficiale (1).pdf" (21 pages, 878218 bytes).
+Output written on "report_bayesian_ufficiale (1).pdf" (21 pages, 879136 bytes).
 
 PDF statistics:
- 361 PDF objects out of 1000 (max. 8388607)
- 98 named destinations out of 1000 (max. 500000)
+ 368 PDF objects out of 1000 (max. 8388607)
+ 104 named destinations out of 1000 (max. 500000)
  113438 words of extra memory for PDF output out of 128383 (max. 10000000)
 

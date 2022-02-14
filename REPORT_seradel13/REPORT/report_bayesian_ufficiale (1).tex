@@ -854,7 +854,89 @@ Given $\mathbf{y} \in \mathbb{R^{n}} $
 and $a_n= a + n/2n=2, b_n=b + n(\mu-\bar y)^2/2 +	\sum_{i=1}^n (y-\bar y)^2/2 $
 
 
-% DA AGGIUNGERE I RISULTATI!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+
+%----- MU ------
+
+
+
+
+\begin{figure}[h!]
+	%	{ %\textbf{Complete sampling}}
+	\centering
+	\includegraphics[width=\textwidth]{doublecoupling_pack/doublecoupling_mu_chain_meeting}
+	\caption{A Coupled chains for parameter $\mu$ }   %without parallelization?
+	\label{muchainsdouble}
+\end{figure}
+
+
+\begin{figure}[h!]
+	%	{ %\textbf{Complete sampling}}
+	\centering
+	\includegraphics[width=\textwidth]{doublecoupling_pack/doublecoupling_sampling_mu}
+	\caption{Sampling from all the accepted parallelized chains for parameter $\mu$ }   %without parallelization?
+	\label{muallsampledouble}
+\end{figure}
+
+
+
+\begin{figure}[h!]
+	%	{ %\textbf{Complete sampling}}
+	\centering
+	\includegraphics[width=\textwidth]{doublecoupling_pack/doublecoupling_mu_histogram_kernel}
+	\caption{histogram for parameter $\mu$: Sampling from all the accepted parallelized chains with estimated kernel}   %without parallelization?
+	\label{muhistdouble}
+\end{figure}
+
+
+
+%----- SIGMA-----
+
+\begin{figure}[h!]
+	%	{ %\textbf{Complete sampling}}
+	\centering
+	\includegraphics[width=\textwidth]{doublecoupling_pack/doublecoupling_sigma_chain_meeting}
+	\caption{A Coupled chains for parameter $\sigma^2$ }   %without parallelization?
+	\label{sigmachainsdouble}
+\end{figure}
+
+
+\begin{figure}[h!]
+	%	{ %\textbf{Complete sampling}}
+	\centering
+	\includegraphics[width=\textwidth]{doublecoupling_pack/doublecoupling_sampling_sigma}
+	\caption{Sampling from all the accepted parallelized chains for parameter $\sigma^2$  }   %without parallelization?
+	\label{sigmaallsampledouble}
+\end{figure}
+
+
+
+\begin{figure}[h!]
+	%	{ %\textbf{Complete sampling}}
+	\centering
+	\includegraphics[width=\textwidth]{doublecoupling_pack/doublecoupling_sigma_histogram_kernel}
+	\caption{histogram for parameter $\sigma^2$ : Sampling from all the accepted parallelized chains with estimated kernel}   %without parallelization?
+	\label{sigmahistdouble}
+\end{figure}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	\section{Numerical Experiments}
 In order to test our method on a more complex problem, we followed the common numerical experiment in the literature: ABC applied on the g-and-k distribution.
 The goal is to, not only, apply ABC algorithm to this problem, but also the Unbiased coupled Markov chain Monte Carlo method.
