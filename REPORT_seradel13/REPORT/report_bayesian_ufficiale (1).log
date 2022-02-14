@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2019.3.18)  14 FEB 2022 14:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2019.3.18)  14 FEB 2022 16:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -714,21 +714,21 @@ LaTeX Warning: Label `abch18' multiply defined.
 )
 \openout1 = `"report_bayesian_ufficiale (1).aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 86.
-LaTeX Font Info:    ... okay on input line 86.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 86.
-LaTeX Font Info:    ... okay on input line 86.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 86.
-LaTeX Font Info:    ... okay on input line 86.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 86.
-LaTeX Font Info:    ... okay on input line 86.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 86.
-LaTeX Font Info:    ... okay on input line 86.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 86.
-LaTeX Font Info:    ... okay on input line 86.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 86.
-LaTeX Font Info:    ... okay on input line 86.
-LaTeX Font Info:    Try loading font information for T1+pplx on input line 86.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 96.
+LaTeX Font Info:    ... okay on input line 96.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 96.
+LaTeX Font Info:    ... okay on input line 96.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 96.
+LaTeX Font Info:    ... okay on input line 96.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 96.
+LaTeX Font Info:    ... okay on input line 96.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 96.
+LaTeX Font Info:    ... okay on input line 96.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 96.
+LaTeX Font Info:    ... okay on input line 96.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 96.
+LaTeX Font Info:    ... okay on input line 96.
+LaTeX Font Info:    Try loading font information for T1+pplx on input line 96.
  (c:/texlive/2018/texmf-dist/tex/latex/psnfss/t1pplx.fd
 File: t1pplx.fd 2004/09/06 font definitions for T1/pplx.
 )
@@ -741,9 +741,9 @@ Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file '"report_bayesian_ufficiale (1)".bbl' found.
 
 (./report_bayesian_ufficiale (1).bbl)
-Package biblatex Info: Reference section=0 on input line 86.
-Package biblatex Info: Reference segment=0 on input line 86.
-LaTeX Info: Redefining \microtypecontext on input line 86.
+Package biblatex Info: Reference section=0 on input line 96.
+Package biblatex Info: Reference segment=0 on input line 96.
+LaTeX Info: Redefining \microtypecontext on input line 96.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -796,7 +796,7 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \AtBeginShipoutBox=\box32
-Package hyperref Info: Link coloring OFF on input line 86.
+Package hyperref Info: Link coloring OFF on input line 96.
 (c:/texlive/2018/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
@@ -805,9 +805,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count340
 )
-LaTeX Info: Redefining \ref on input line 86.
-LaTeX Info: Redefining \pageref on input line 86.
-LaTeX Info: Redefining \nameref on input line 86.
+LaTeX Info: Redefining \ref on input line 96.
+LaTeX Info: Redefining \pageref on input line 96.
+LaTeX Info: Redefining \nameref on input line 96.
 
 (./report_bayesian_ufficiale (1).out) (./report_bayesian_ufficiale (1).out)
 \@outlinefile=\write5
@@ -845,33 +845,33 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <20.74> not available
-(Font)              Font shape `T1/pplx/b/n' tried instead on input line 90.
-LaTeX Font Info:    Try loading font information for OT1+pplx on input line 90.
-
+(Font)              Font shape `T1/pplx/b/n' tried instead on input line 100.
+LaTeX Font Info:    Try loading font information for OT1+pplx on input line 100
+.
 
 (c:/texlive/2018/texmf-dist/tex/latex/psnfss/ot1pplx.fd
 File: ot1pplx.fd 2004/09/06 font definitions for OT1/pplx.
 )
-LaTeX Font Info:    Try loading font information for OML+zplm on input line 90.
-
+LaTeX Font Info:    Try loading font information for OML+zplm on input line 100
+.
 
 (c:/texlive/2018/texmf-dist/tex/latex/psnfss/omlzplm.fd
 File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
 )
-LaTeX Font Info:    Try loading font information for OMS+zplm on input line 90.
-
+LaTeX Font Info:    Try loading font information for OMS+zplm on input line 100
+.
 
 (c:/texlive/2018/texmf-dist/tex/latex/psnfss/omszplm.fd
 File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
 )
-LaTeX Font Info:    Try loading font information for OMX+zplm on input line 90.
-
+LaTeX Font Info:    Try loading font information for OMX+zplm on input line 100
+.
 
 (c:/texlive/2018/texmf-dist/tex/latex/psnfss/omxzplm.fd
 File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
 )
-LaTeX Font Info:    Try loading font information for OT1+zplm on input line 90.
-
+LaTeX Font Info:    Try loading font information for OT1+zplm on input line 100
+.
 
 (c:/texlive/2018/texmf-dist/tex/latex/psnfss/ot1zplm.fd
 File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
@@ -887,7 +887,7 @@ Package microtype Info: Character `029' is missing
 
 {c:/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <24.88> not available
-(Font)              Font shape `T1/pplx/b/n' tried instead on input line 91.
+(Font)              Font shape `T1/pplx/b/n' tried instead on input line 101.
 
 (./report_bayesian_ufficiale (1).toc
 LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <10.95> not available
@@ -900,8 +900,8 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.95 \chapter
-             {Introduction} [1
+l.105 \chapter
+              {Introduction} [1
 
 ]
 Chapter 1.
@@ -912,41 +912,41 @@ Package microtype Info: Character `029' is missing
 
 ]
 Chapter 2.
-LaTeX Font Info:    Try loading font information for U+fplmbb on input line 120
+LaTeX Font Info:    Try loading font information for U+fplmbb on input line 130
 .
 (c:/texlive/2018/texmf-dist/tex/latex/psnfss/ufplmbb.fd
 File: ufplmbb.fd 2003/10/30 Fontinst v1.914 font definitions for U/fplmbb.
 ) [3
 
 ]
-Overfull \hbox (1.08028pt too wide) in paragraph at lines 163--164
+Overfull \hbox (1.08028pt too wide) in paragraph at lines 173--174
 []\T1/pplx/m/n/10.95 (-20) Time-averaged es-ti-ma-tor can be con-sid-ered as a 
 spe-cial case of Rhee--Glynn es-ti-ma-tor,
  []
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
+ Make it at least 25.60234pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
 [4] [5] [6]
-LaTeX Font Info:    Try loading font information for OMS+pplx on input line 307
+LaTeX Font Info:    Try loading font information for OMS+pplx on input line 317
 .
-LaTeX Font Info:    No file OMSpplx.fd. on input line 307.
+LaTeX Font Info:    No file OMSpplx.fd. on input line 317.
 
 
 LaTeX Font Warning: Font shape `OMS/pplx/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbullet' on input line 307.
+(Font)              for symbol `textbullet' on input line 317.
 
 
-LaTeX Warning: Command \textgreater invalid in math mode on input line 309.
+LaTeX Warning: Command \textgreater invalid in math mode on input line 319.
 
 [7]
 Chapter 3.
 LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <10> not available
-(Font)              Font shape `T1/pplx/b/n' tried instead on input line 369.
+(Font)              Font shape `T1/pplx/b/n' tried instead on input line 379.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -960,13 +960,13 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 File: immagini_coupling/2_catene_coupling.png Graphic file (type png)
 <use immagini_coupling/2_catene_coupling.png>
 Package pdftex.def Info: immagini_coupling/2_catene_coupling.png  used on input
- line 496.
+ line 506.
 (pdftex.def)             Requested size: 418.25368pt x 146.42203pt.
 <immagini_coupling/traceplot_coupling.png, id=212, 719.68875pt x 251.94125pt>
 File: immagini_coupling/traceplot_coupling.png Graphic file (type png)
 <use immagini_coupling/traceplot_coupling.png>
 Package pdftex.def Info: immagini_coupling/traceplot_coupling.png  used on inpu
-t line 503.
+t line 513.
 (pdftex.def)             Requested size: 418.25368pt x 146.42203pt.
 
 
@@ -976,7 +976,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 File: immagini_coupling/hist_coupling.png Graphic file (type png)
 <use immagini_coupling/hist_coupling.png>
 Package pdftex.def Info: immagini_coupling/hist_coupling.png  used on input lin
-e 510.
+e 520.
 (pdftex.def)             Requested size: 418.25368pt x 147.8598pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -989,7 +989,7 @@ File: immagini_coupling_multivariate/coupling_mult_chain_meeeting_1.png Graphic
  file (type png)
 <use immagini_coupling_multivariate/coupling_mult_chain_meeeting_1.png>
 Package pdftex.def Info: immagini_coupling_multivariate/coupling_mult_chain_mee
-eting_1.png  used on input line 571.
+eting_1.png  used on input line 581.
 (pdftex.def)             Requested size: 418.25368pt x 139.41846pt.
 <immagini_coupling_multivariate/coupling_mult_chain_meeeting_2.png, id=233, 867
 .24pt x 289.08pt>
@@ -997,7 +997,7 @@ File: immagini_coupling_multivariate/coupling_mult_chain_meeeting_2.png Graphic
  file (type png)
 <use immagini_coupling_multivariate/coupling_mult_chain_meeeting_2.png>
 Package pdftex.def Info: immagini_coupling_multivariate/coupling_mult_chain_mee
-eting_2.png  used on input line 577.
+eting_2.png  used on input line 587.
 (pdftex.def)             Requested size: 418.25368pt x 139.41846pt.
 <immagini_coupling_multivariate/coupling_mult_sampling_1.png, id=234, 867.24pt 
 x 289.08pt>
@@ -1005,7 +1005,7 @@ File: immagini_coupling_multivariate/coupling_mult_sampling_1.png Graphic file
 (type png)
 <use immagini_coupling_multivariate/coupling_mult_sampling_1.png>
 Package pdftex.def Info: immagini_coupling_multivariate/coupling_mult_sampling_
-1.png  used on input line 585.
+1.png  used on input line 595.
 (pdftex.def)             Requested size: 418.25368pt x 139.41846pt.
 <immagini_coupling_multivariate/coupling_mult_sampling_2.png, id=235, 867.24pt 
 x 289.08pt>
@@ -1013,7 +1013,7 @@ File: immagini_coupling_multivariate/coupling_mult_sampling_2.png Graphic file
 (type png)
 <use immagini_coupling_multivariate/coupling_mult_sampling_2.png>
 Package pdftex.def Info: immagini_coupling_multivariate/coupling_mult_sampling_
-2.png  used on input line 590.
+2.png  used on input line 600.
 (pdftex.def)             Requested size: 418.25368pt x 139.41846pt.
 
 
@@ -1025,7 +1025,7 @@ File: immagini_coupling_multivariate/coupling_mult_histogram_1.png Graphic file
  (type png)
 <use immagini_coupling_multivariate/coupling_mult_histogram_1.png>
 Package pdftex.def Info: immagini_coupling_multivariate/coupling_mult_histogram
-_1.png  used on input line 598.
+_1.png  used on input line 608.
 (pdftex.def)             Requested size: 418.25368pt x 139.41846pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -1036,7 +1036,7 @@ File: immagini_coupling_multivariate/coupling_mult_histogram_2.png Graphic file
  (type png)
 <use immagini_coupling_multivariate/coupling_mult_histogram_2.png>
 Package pdftex.def Info: immagini_coupling_multivariate/coupling_mult_histogram
-_2.png  used on input line 603.
+_2.png  used on input line 613.
 (pdftex.def)             Requested size: 418.25368pt x 139.41846pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -1047,13 +1047,13 @@ upling_multivariate/coupling_mult_sampling_1.png>] [13 <./immagini_coupling_mul
 tivariate/coupling_mult_sampling_2.png> <./immagini_coupling_multivariate/coupl
 ing_mult_histogram_1.png> <./immagini_coupling_multivariate/coupling_mult_histo
 gram_2.png>]
-Overfull \hbox (12.60512pt too wide) in paragraph at lines 611--612
+Overfull \hbox (12.60512pt too wide) in paragraph at lines 621--622
 \T1/pplx/m/n/10 (-20) In or-der to achieve par-al-leliza-tion, our choice is to
  use Python's stan-dard pack-age for par-al-leliza-tion,
  []
 
 
-Overfull \hbox (2.2441pt too wide) in paragraph at lines 611--612
+Overfull \hbox (2.2441pt too wide) in paragraph at lines 621--622
 \T1/pplx/m/n/10 (-20) called mul-ti-pro-cess-ing (https://docs.python.org/3/lib
 rary/multiprocessing.html). The Python's
  []
@@ -1061,7 +1061,7 @@ rary/multiprocessing.html). The Python's
 [14
 
 ]
-Overfull \hbox (2.16862pt too wide) in paragraph at lines 624--626
+Overfull \hbox (2.16862pt too wide) in paragraph at lines 634--636
 \T1/pplx/m/n/10 (-20) We im-ple-mented an MCMC al-go-rithm us-ing Ap-prox-i-mat
 e Bayesian Com-pu-ta-tion to ap-prox-i-mate
  []
@@ -1069,154 +1069,168 @@ e Bayesian Com-pu-ta-tion to ap-prox-i-mate
 [15
 
 ]
-<abc_coupling/2catabccoupling.png, id=274, 1168.365pt x 579.16376pt>
-File: abc_coupling/2catabccoupling.png Graphic file (type png)
-<use abc_coupling/2catabccoupling.png>
-Package pdftex.def Info: abc_coupling/2catabccoupling.png  used on input line 7
-20.
-(pdftex.def)             Requested size: 418.25368pt x 207.33226pt.
-<abc_coupling/histabccoupling.png, id=275, 712.6625pt x 251.94125pt>
-File: abc_coupling/histabccoupling.png Graphic file (type png)
-<use abc_coupling/histabccoupling.png>
-Package pdftex.def Info: abc_coupling/histabccoupling.png  used on input line 7
-29.
-(pdftex.def)             Requested size: 418.25368pt x 147.8598pt.
+<abc_coupling/coupling_abc_univ_chain_meeeting.png, id=274, 867.24pt x 289.08pt
+>
+File: abc_coupling/coupling_abc_univ_chain_meeeting.png Graphic file (type png)
+
+<use abc_coupling/coupling_abc_univ_chain_meeeting.png>
+Package pdftex.def Info: abc_coupling/coupling_abc_univ_chain_meeeting.png  use
+d on input line 730.
+(pdftex.def)             Requested size: 418.25368pt x 139.41846pt.
+<abc_coupling/coupling_abc_univ_sampling.png, id=275, 867.24pt x 289.08pt>
+File: abc_coupling/coupling_abc_univ_sampling.png Graphic file (type png)
+<use abc_coupling/coupling_abc_univ_sampling.png>
+Package pdftex.def Info: abc_coupling/coupling_abc_univ_sampling.png  used on i
+nput line 739.
+(pdftex.def)             Requested size: 418.25368pt x 139.41846pt.
+<abc_coupling/coupling_abc_univ_histogram_posterior.png, id=276, 867.24pt x 289
+.08pt>
+File: abc_coupling/coupling_abc_univ_histogram_posterior.png Graphic file (type
+ png)
+<use abc_coupling/coupling_abc_univ_histogram_posterior.png>
+Package pdftex.def Info: abc_coupling/coupling_abc_univ_histogram_posterior.png
+  used on input line 747.
+(pdftex.def)             Requested size: 418.25368pt x 139.41846pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[16 <./abc_coupling/2catabccoupling.png>]
+[16 <./abc_coupling/coupling_abc_univ_chain_meeeting.png> <./abc_coupling/coupl
+ing_abc_univ_sampling.png>]
 <immagini_abc_coupling_multivariate/coupling_abc_mult_chain_meeeting_1.png, id=
-285, 867.24pt x 289.08pt>
+288, 867.24pt x 289.08pt>
 File: immagini_abc_coupling_multivariate/coupling_abc_mult_chain_meeeting_1.png
  Graphic file (type png)
 <use immagini_abc_coupling_multivariate/coupling_abc_mult_chain_meeeting_1.png>
 
 Package pdftex.def Info: immagini_abc_coupling_multivariate/coupling_abc_mult_c
-hain_meeeting_1.png  used on input line 782.
+hain_meeeting_1.png  used on input line 801.
 (pdftex.def)             Requested size: 418.25368pt x 139.41846pt.
 <immagini_abc_coupling_multivariate/coupling_abc_mult_chain_meeeting_2.png, id=
-286, 867.24pt x 289.08pt>
+289, 867.24pt x 289.08pt>
 File: immagini_abc_coupling_multivariate/coupling_abc_mult_chain_meeeting_2.png
  Graphic file (type png)
 <use immagini_abc_coupling_multivariate/coupling_abc_mult_chain_meeeting_2.png>
 
 Package pdftex.def Info: immagini_abc_coupling_multivariate/coupling_abc_mult_c
-hain_meeeting_2.png  used on input line 787.
+hain_meeeting_2.png  used on input line 806.
 (pdftex.def)             Requested size: 418.25368pt x 139.41846pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<immagini_abc_coupling_multivariate/coupling_abc_mult_sampling_1.png, id=287, 8
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<immagini_abc_coupling_multivariate/coupling_abc_mult_sampling_1.png, id=290, 8
 67.24pt x 289.08pt>
 File: immagini_abc_coupling_multivariate/coupling_abc_mult_sampling_1.png Graph
 ic file (type png)
 <use immagini_abc_coupling_multivariate/coupling_abc_mult_sampling_1.png>
 Package pdftex.def Info: immagini_abc_coupling_multivariate/coupling_abc_mult_s
-ampling_1.png  used on input line 793.
+ampling_1.png  used on input line 812.
 (pdftex.def)             Requested size: 418.25368pt x 139.41846pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<immagini_abc_coupling_multivariate/coupling_abc_mult_sampling_2.png, id=288, 8
+<immagini_abc_coupling_multivariate/coupling_abc_mult_sampling_2.png, id=291, 8
 67.24pt x 289.08pt>
 File: immagini_abc_coupling_multivariate/coupling_abc_mult_sampling_2.png Graph
 ic file (type png)
 <use immagini_abc_coupling_multivariate/coupling_abc_mult_sampling_2.png>
 Package pdftex.def Info: immagini_abc_coupling_multivariate/coupling_abc_mult_s
-ampling_2.png  used on input line 798.
+ampling_2.png  used on input line 817.
 (pdftex.def)             Requested size: 418.25368pt x 139.41846pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<immagini_abc_coupling_multivariate/coupling_abc_mult_histogram_1.png, id=289, 
+<immagini_abc_coupling_multivariate/coupling_abc_mult_histogram_1.png, id=292, 
 867.24pt x 289.08pt>
 File: immagini_abc_coupling_multivariate/coupling_abc_mult_histogram_1.png Grap
 hic file (type png)
 <use immagini_abc_coupling_multivariate/coupling_abc_mult_histogram_1.png>
 Package pdftex.def Info: immagini_abc_coupling_multivariate/coupling_abc_mult_h
-istogram_1.png  used on input line 804.
+istogram_1.png  used on input line 823.
 (pdftex.def)             Requested size: 418.25368pt x 139.41846pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<immagini_abc_coupling_multivariate/coupling_abc_mult_histogram_2.png, id=290, 
+<immagini_abc_coupling_multivariate/coupling_abc_mult_histogram_2.png, id=293, 
 867.24pt x 289.08pt>
 File: immagini_abc_coupling_multivariate/coupling_abc_mult_histogram_2.png Grap
 hic file (type png)
 <use immagini_abc_coupling_multivariate/coupling_abc_mult_histogram_2.png>
 Package pdftex.def Info: immagini_abc_coupling_multivariate/coupling_abc_mult_h
-istogram_2.png  used on input line 809.
+istogram_2.png  used on input line 828.
 (pdftex.def)             Requested size: 418.25368pt x 139.41846pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[17 <./abc_coupling/histabccoupling.png> <./immagini_abc_coupling_multivariate/
-coupling_abc_mult_chain_meeeting_1.png>] [18 <./immagini_abc_coupling_multivari
-ate/coupling_abc_mult_chain_meeeting_2.png> <./immagini_abc_coupling_multivaria
-te/coupling_abc_mult_sampling_1.png> <./immagini_abc_coupling_multivariate/coup
-ling_abc_mult_sampling_2.png>]
+[17 <./abc_coupling/coupling_abc_univ_histogram_posterior.png>] [18 <./immagini
+_abc_coupling_multivariate/coupling_abc_mult_chain_meeeting_1.png> <./immagini_
+abc_coupling_multivariate/coupling_abc_mult_chain_meeeting_2.png> <./immagini_a
+bc_coupling_multivariate/coupling_abc_mult_sampling_1.png>]
 Missing character: There is no n in font fplmbb!
- [19 <./immagini_abc_coupling_multivariate/coupling_abc_mult_histogram_1.png> <
-./immagini_abc_coupling_multivariate/coupling_abc_mult_histogram_2.png>]
-<doublecoupling_pack/doublecoupling_mu_chain_meeting.png, id=322, 867.24pt x 28
+ [19 <./immagini_abc_coupling_multivariate/coupling_abc_mult_sampling_2.png> <.
+/immagini_abc_coupling_multivariate/coupling_abc_mult_histogram_1.png> <./immag
+ini_abc_coupling_multivariate/coupling_abc_mult_histogram_2.png>]
+<doublecoupling_pack/doublecoupling_mu_chain_meeting.png, id=325, 867.24pt x 28
 9.08pt>
 File: doublecoupling_pack/doublecoupling_mu_chain_meeting.png Graphic file (typ
 e png)
 <use doublecoupling_pack/doublecoupling_mu_chain_meeting.png>
 Package pdftex.def Info: doublecoupling_pack/doublecoupling_mu_chain_meeting.pn
-g  used on input line 883.
+g  used on input line 902.
 (pdftex.def)             Requested size: 418.25368pt x 139.41846pt.
-<doublecoupling_pack/doublecoupling_sampling_mu.png, id=323, 867.24pt x 289.08p
+<doublecoupling_pack/doublecoupling_sampling_mu.png, id=326, 867.24pt x 289.08p
 t>
 File: doublecoupling_pack/doublecoupling_sampling_mu.png Graphic file (type png
 )
 <use doublecoupling_pack/doublecoupling_sampling_mu.png>
 Package pdftex.def Info: doublecoupling_pack/doublecoupling_sampling_mu.png  us
-ed on input line 891.
+ed on input line 910.
 (pdftex.def)             Requested size: 418.25368pt x 139.41846pt.
-<doublecoupling_pack/doublecoupling_mu_histogram_kernel.png, id=324, 867.24pt x
+<doublecoupling_pack/doublecoupling_mu_histogram_kernel.png, id=327, 867.24pt x
  289.08pt>
 File: doublecoupling_pack/doublecoupling_mu_histogram_kernel.png Graphic file (
 type png)
 <use doublecoupling_pack/doublecoupling_mu_histogram_kernel.png>
 Package pdftex.def Info: doublecoupling_pack/doublecoupling_mu_histogram_kernel
-.png  used on input line 900.
+.png  used on input line 919.
 (pdftex.def)             Requested size: 418.25368pt x 139.41846pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<doublecoupling_pack/doublecoupling_sigma_chain_meeting.png, id=325, 867.24pt x
+<doublecoupling_pack/doublecoupling_sigma_chain_meeting.png, id=328, 867.24pt x
  289.08pt>
 File: doublecoupling_pack/doublecoupling_sigma_chain_meeting.png Graphic file (
 type png)
 <use doublecoupling_pack/doublecoupling_sigma_chain_meeting.png>
 Package pdftex.def Info: doublecoupling_pack/doublecoupling_sigma_chain_meeting
-.png  used on input line 914.
+.png  used on input line 933.
 (pdftex.def)             Requested size: 418.25368pt x 139.41846pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<doublecoupling_pack/doublecoupling_sampling_sigma.png, id=326, 867.24pt x 289.
+<doublecoupling_pack/doublecoupling_sampling_sigma.png, id=329, 867.24pt x 289.
 08pt>
 File: doublecoupling_pack/doublecoupling_sampling_sigma.png Graphic file (type 
 png)
 <use doublecoupling_pack/doublecoupling_sampling_sigma.png>
 Package pdftex.def Info: doublecoupling_pack/doublecoupling_sampling_sigma.png 
- used on input line 922.
+ used on input line 941.
 (pdftex.def)             Requested size: 418.25368pt x 139.41846pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<doublecoupling_pack/doublecoupling_sigma_histogram_kernel.png, id=327, 867.24p
+<doublecoupling_pack/doublecoupling_sigma_histogram_kernel.png, id=330, 867.24p
 t x 289.08pt>
 File: doublecoupling_pack/doublecoupling_sigma_histogram_kernel.png Graphic fil
 e (type png)
 <use doublecoupling_pack/doublecoupling_sigma_histogram_kernel.png>
 Package pdftex.def Info: doublecoupling_pack/doublecoupling_sigma_histogram_ker
-nel.png  used on input line 931.
+nel.png  used on input line 950.
 (pdftex.def)             Requested size: 418.25368pt x 139.41846pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -1230,7 +1244,7 @@ Chapter 4.
 [23
 
 ]
-Overfull \hbox (16.63542pt too wide) in paragraph at lines 1096--1097
+Overfull \hbox (16.63542pt too wide) in paragraph at lines 1115--1116
 []\T1/pplx/m/n/10 (-20) Generate a sam-ple of 1000 ob-ser-va-tions such that $\
 OML/zplm/m/it/10 y[] \OMS/zplm/m/n/10 ^^X \OML/zplm/m/it/10 quantilefunction\OT
 1/zplm/m/n/10 (\OML/zplm/m/it/10 z[]\OT1/zplm/m/n/10 (\OML/zplm/m/it/10 r\OT1/z
@@ -1239,7 +1253,7 @@ plm/m/n/10 )\OT1/pplx/m/n/10 (-20) , \OML/zplm/m/it/10 ^^R[]\OT1/zplm/m/n/10 )$
  []
 
 [24]
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 1146
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 1165
 .
  (c:/texlive/2018/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
@@ -1248,19 +1262,19 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1159.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1178.
  [25
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1159.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1178.
 
 (./report_bayesian_ufficiale (1).aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1159.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1159.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1178.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1178.
 
 Package rerunfilecheck Info: File `"report_bayesian_ufficiale (1)".out' has not
  changed.
-(rerunfilecheck)             Checksum: 9A80C4570D1C6B3B940BC46C4EEAA280;1589.
+(rerunfilecheck)             Checksum: EA34AAA66BA7E632C7EC6AEC36F26DDC;1589.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -1274,11 +1288,11 @@ ml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 18391 strings out of 492649
- 306894 string characters out of 6133384
- 790921 words of memory out of 5000000
- 21476 multiletter control sequences out of 15000+600000
- 100072 words of font info for 398 fonts, out of 8000000 for 9000
+ 18402 strings out of 492649
+ 307373 string characters out of 6133384
+ 791143 words of memory out of 5000000
+ 21481 multiletter control sequences out of 15000+600000
+ 100295 words of font info for 401 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  43i,13n,45p,1031b,1725s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2018/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{c:/texl
@@ -1295,11 +1309,11 @@ r/sftt1095.pfb><c:/texlive/2018/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb>
 <c:/texlive/2018/texmf-dist/fonts/type1/urw/palatino/uplbi8a.pfb><c:/texlive/20
 18/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb><c:/texlive/2018/texmf-dist/f
 onts/type1/urw/palatino/uplri8a.pfb>
-Output written on "report_bayesian_ufficiale (1).pdf" (26 pages, 899353 bytes).
+Output written on "report_bayesian_ufficiale (1).pdf" (26 pages, 903213 bytes).
 
 PDF statistics:
- 452 PDF objects out of 1000 (max. 8388607)
- 360 compressed objects within 4 object streams
- 118 named destinations out of 1000 (max. 500000)
- 67356 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 455 PDF objects out of 1000 (max. 8388607)
+ 361 compressed objects within 4 object streams
+ 119 named destinations out of 1000 (max. 500000)
+ 67361 words of extra memory for PDF output out of 74296 (max. 10000000)
 

@@ -43,7 +43,7 @@
 \pagestyle{fancy} % All pages have headers and footers
 \fancyhead{} % Blank out the default header
 \fancyfoot{} % Blank out the default footer
-\fancyhead[C]{Running title $\bullet$ February 2022 }%$\bullet$} % Custom header text
+\fancyhead[C]{Coupled Markov chains with applications to Approximate Bayesian Computation for model based clustering $\bullet$ February 2022 }%$\bullet$} % Custom header text
 \fancyfoot[RO,LE]{\thepage} % Custom footer text
 
 \usepackage{titling} % Customizing the title section
@@ -57,6 +57,9 @@
 %----------------------------------------------------------------------------------------
 %	TITLE SECTION
 %----------------------------------------------------------------------------------------
+
+
+
 
 \setlength{\droptitle}{-4\baselineskip} % Move the title up
 
@@ -80,6 +83,13 @@
 %\end{abstract}
 
 }
+
+
+
+
+
+
+
 
 %----------------------------------------------------------------------------------------
 
@@ -717,7 +727,7 @@ The results are shown in the following plots.
 \begin{figure}[h!]
 	%	{ \textbf{Coupled chains} }
 	\centering
-	\includegraphics[width=\textwidth]{abc_coupling/2catabccoupling}	
+	\includegraphics[width=\textwidth]{abc_coupling/coupling_abc_univ_chain_meeeting}	
 	\caption{Coupled chains}
 	\label{complete1}
 	
@@ -726,12 +736,21 @@ The results are shown in the following plots.
 \begin{figure}[h!]
 	%	{ %\textbf{Complete sampling}}
 	\centering
-	\includegraphics[width=\textwidth]{abc_coupling/histabccoupling}
-	\caption{Sampling histogram with real distribution}   %without parallelization?
+	\includegraphics[width=\textwidth]{abc_coupling/coupling_abc_univ_sampling}
+	\caption{Sampling}
 	\label{complete2}
 \end{figure}
 
-We can see in figure \ref{complete1} that the chains meet after few iterations remaining together while they converge to the posterior mean $\mu_{n}$. In figure \ref{complete2} we can see that our model approximates quite well the real distribution, even if the computation could be improved increasing the number of iterations performing a parallelization. %?
+\begin{figure}[h!]
+	%	{ %\textbf{Complete sampling}}
+	\centering
+	\includegraphics[width=\textwidth]{abc_coupling/coupling_abc_univ_histogram_posterior}
+	\caption{Sampling histogram with real distribution}  
+	\label{complete3}
+\end{figure}
+
+
+We can see in figure \ref{complete1} that the chains meet after few iterations remaining together while they converge to the posterior mean $\mu_{n}$. In figure \ref{complete3} we can see that our model approximates well the real distribution.
 
 
 
