@@ -105,6 +105,7 @@
 
 
 Markov chain Monte Carlo (MCMC) methods provide consistent approximations of high dimensional integrals, namely as the number of iterations goes to infinity. However, these estimators can be potentially biased for any fixed number of iterations, hence the aim is to propose a general construction to produce unbiased estimators of integrals with respect to a target probability distribution. 
+The following results has been illustrated by Jacob, O'Leary and Atchadé in 2020 \cite{jacob2020}.
 
 Glynn and Rhee \cite{glynn2014exact} illustrated a construction on Markov chains represented by iterated random functions; in their approach only two chains must be coupled for the proposed estimator to be unbiased, without further assumptions on the state space or target distribution. 
 Indeed, we need an unbiased estimator in order to make the parallelization possible, that will lead to a faster computation of the MCMC.
@@ -215,7 +216,7 @@ where $ \bar P$ must be evaluated before.
 
 and it can be noticed that the acceptance conditions are based on the same samples from the uniform.
 
-A maximal coupling between two distributions $p$ ad $q$ on a space $\mathcal{X}$ is a distribution of a pair of random variables$(X, \space Y)$ that maximizes $\mathbb{P}(X=Y)$, subject to the marginal constraints $X\sim p$ and $Y \sim q$.
+A maximal coupling between two distributions $p$ ad $q$ on a space $\mathcal{X}$ is a distribution of a pair of random variables$(X, \space Y)$ that maximizes $\mathbb{P}(X=Y)$, subject to the marginal constraints $X\sim p$ and $Y \sim q$ \cite{zhang2020markov} \cite{Cordaro2017past}.
 
 We can proceed setting $p = \mathcal{N}(X_{t-1},1)$ and $q = \mathcal{N}(Y_{t-1},1)$, then:
 \begin{enumerate}
@@ -228,7 +229,7 @@ We can proceed setting $p = \mathcal{N}(X_{t-1},1)$ and $q = \mathcal{N}(Y_{t-1}
 		until $W^\star > p(Y_t)$ and output $(X_t,Y_t)$.
 	\end{enumerate}
 \end{enumerate}
-and hence the output follows a maximal coupling of $p$ and $q$.
+and hence the output follows a maximal coupling of $p$ and $q$. A complete discussion about this topic can be found in Rosenthal \cite{rosenthal1997faithful}.
 
 Moreover, the absence of bias allows the application on time budget-constrained parallel simulation: independent unbiased estimators with finite variance can be generated on separate machines and combined into consistent and asymptotically normal estimators, leading to better results with respect to the non-parallelized version.
 
@@ -271,7 +272,7 @@ In other words, the bias of the MCMC algorithm can be removed at the cost of an 
 
 \subsection{Approximate Bayesian Computation}
 
-Likelihood-free methods are used to solve the problem that concerns the intractable evaluation of the likelihood function. A way to solve this issue is to use Approximate Bayesian Computation method, in which samples are produced form an approximation of the posterios distribution.
+Likelihood-free methods are used to solve the problem that concerns the intractable evaluation of the likelihood function. A way to solve this issue is to use Approximate Bayesian Computation method \cite{sisson2018overview}, in which samples are produced form an approximation of the posterios distribution.
 Doing so the likelihood doesn't need to be evaluated in teh algorithm.
 
 Our focus was on ABC-Markov chain Monte Carlo samplers using Metropolis–Hastings algorithm.
@@ -282,7 +283,7 @@ In the well known Metropolis–Hastings algorithm given the current chain state 
 
 Whereas the likelihood can't be evaluated, in the standard ABC computation the posterior is substituted with the approximated version $$\pi_{ABC}(\theta|s_obs) \propto \int K_h(\parallel s'-s_{obs}\parallel)Lik(\theta|s_obs)\pi(\theta) ds $$
 
-where ${K_h(u)}  =  \frac{1}{h}  K \left( \frac{u}{h} \right)$ is the standard smoothing Kernel function of parameter $ h>0$,$ Lik(\theta|s_obs)$ is the intractable likelihood function and $s=S(y)$ is the low-dimensional vector of summary statistics
+where ${K_h(u)}  =  \frac{1}{h}  K \left( \frac{u}{h} \right)$ is the standard smoothing Kernel function of parameter $ h>0$,$ Lik(\theta|s_obs)$ is the intractable likelihood function and $s=S(y)$ is the low-dimensional vector of summary statistics.
 
 Therefore we can rewrite the acceptance probability, after some semplification, as:
  $$ \alpha(\theta^{(i-1)},\theta')= \min  \{ 1, \frac{\pi_{ABC}(\theta'|s_{obs})g(\theta',\theta^{(i-1)})}{\pi_{ABC}(\theta^{(i-1)}|s_{obs})g(\theta^{(i-1)},\theta') } \} $$
@@ -292,11 +293,11 @@ sucht that there's no direct evaluation of the likelihood function.
 
 A key task in this computation is to set efficiently both the scaling parameter h and the summary statistics:
 the former parameter must be small to obtain the resulting estimate of the posterior closer to the true posterior. While the latter must be large enough to contain informations and low enough to avoid curse of dimensionality.
-The best choice is sufficient statistics. As sufficient statistics can be much lower dimensional than the full dataset, it is clear that greater approximation accuracy can be achieved for the same computational overheads when using low dimensional statistics.
+The best choice is to use sufficient statistics \cite{prangle2015summary}. As sufficient statistics can be much lower dimensional than the full dataset, it is clear that greater approximation accuracy can be achieved for the same computational overheads when using low dimensional statistics.
 Then the comparison $\parallel y-y_{obs} \parallel$ might be replaced by $\parallel s-s_{obs} \parallel$ without too much loss of information, but with the advantage that the dimension of S(y) is now much lower.
 
 %-----------------------
-The algorithm can be written as:
+The algorithm \cite{fan2018abc} can be written as:
 
 Input:
 			\begin{itemize}
@@ -306,6 +307,7 @@ Input:
 				\item a kernel function $K_h(u)$ and a scale parameter $h > 0$;
 				\item a low dimensional vector of summary statistics $s=S(y)$.
 			\end{itemize}
+		
 Initialize:
  Repeat until $$ K_h(\parallel s^{(0)}-s_{obs}\parallel) > 0$$ 
 	\begin{enumerate}
@@ -360,13 +362,13 @@ The distance is the $L^2-$norm of the difference between $s_{0}$ and $s_{obs}$ a
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=\textwidth]{immagini_abc/h0.2}	
+%	\includegraphics[width=\textwidth]{immagini_abc/h0.2}	
 	\caption{}
 	\label{abch02}
 \end{figure}
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=\textwidth]{immagini_abc/sample0.2}	
+%	\includegraphics[width=\textwidth]{immagini_abc/sample0.2}	
 	\caption{}
 	\label{abcsample02}
 \end{figure}
@@ -380,13 +382,13 @@ As mentioned in the chapter 2, the choice of parameter h is important.  \\
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=\textwidth]{immagini_abc/h1.8}	
+%	\includegraphics[width=\textwidth]{immagini_abc/h1.8}	
 	\caption{}
 	\label{abch18}
 \end{figure}
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=\textwidth]{immagini_abc/sample1.8}	
+%	\includegraphics[width=\textwidth]{immagini_abc/sample1.8}	
 	\caption{}
 	\label{abch18}
 \end{figure}
@@ -400,13 +402,13 @@ As seen in \ref{abch18}, a larger $h$ led to a poor approximation due to the acc
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=\textwidth]{immagini_abc/S10.5}	
+%	\includegraphics[width=\textwidth]{immagini_abc/S10.5}	
 	\caption{}
 	%\label{abch18}
 \end{figure}
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=\textwidth]{immagini_abc/sampleS10.5}	
+%	\includegraphics[width=\textwidth]{immagini_abc/sampleS10.5}	
 	\caption{}
 	%\label{abch18}
 \end{figure}
@@ -416,13 +418,13 @@ The posterior distribution has $\mu=10.2527$ and $\sigma^2=0.0298$
 \begin{center} Input parameters: $\mu_{0}=8,\  \sigma_{0}^2=4,\  \mu_{obs}=10,\  \sigma_{obs}^2 =3,\ h=1.8$  \end{center}
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=\textwidth]{immagini_abc/S11.8}	
+%	\includegraphics[width=\textwidth]{immagini_abc/S11.8}	
 	\caption{}
 	%\label{abch18}
 \end{figure}
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=\textwidth]{immagini_abc/sampleS11.8}	
+%	\includegraphics[width=\textwidth]{immagini_abc/sampleS11.8}	
 	\caption{}
 	%\label{abch18}
 \end{figure}
