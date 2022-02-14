@@ -1,0 +1,45 @@
+OSSERVAZIONI:
+a_obs = 3
+b_obs = 1
+g_obs = 2
+k_obs = 0.5
+
+numero delle osservazioni: 100
+
+PRIOR
+?
+
+
+SETTINGS:
+
+h = 0.6
+
+iterazioni = 600
+burnin = 100
+
+32 coppie eseguite
+6 coppier andate a buon fine
+dimensione finale del campionamento = 3000
+
+RISULTATI:
+time averaged estimator: [2.85644738, 0.97865226, 5.91174188, 0.65158483]
+acc_1: [119., 108.,  45., 126., 116., 111.]
+acc_2: [119., 111.,  44., 122., 103., 113.]
+
+GRAFICI RIPORTATI:
+X = 0,1,2,3
+
+gk_all_sampling_X 
+sono i plot dei sampling delle singole variabili
+
+gk_all_histogram_X
+istogrammi dei samples
+
+gk_all_histogram_kernel_X
+come il precedente con l'aggiunta del kernel estimation grafico
+
+gk_all_chain_meeting
+tutte le coppie di catene
+
+gk_all_chain_meeting_X
+è il plot di una singola coppia di catene che va a convergenza
