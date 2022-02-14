@@ -1,20 +1,21 @@
-\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
-\BOOKMARK [1][-]{section.2}{Methods}{}% 2
-\BOOKMARK [2][-]{subsection.2.1}{Unbiased Markov chain Monte Carlo methods with couplings}{section.2}% 3
-\BOOKMARK [3][-]{subsubsection.2.1.1}{Parallelized implementation results}{subsection.2.1}% 4
-\BOOKMARK [2][-]{subsection.2.2}{Approximate Bayesian Computation}{section.2}% 5
-\BOOKMARK [1][-]{section.3}{Implementation}{}% 6
-\BOOKMARK [2][-]{subsection.3.1}{Approximate Bayesian Computation}{section.3}% 7
-\BOOKMARK [3][-]{subsubsection.3.1.1}{Univariate case}{subsection.3.1}% 8
-\BOOKMARK [2][-]{subsection.3.2}{Multivariate case}{section.3}% 9
-\BOOKMARK [2][-]{subsection.3.3}{Unbiased Markov chain Monte Carlo methods with coupling}{section.3}% 10
-\BOOKMARK [3][-]{subsubsection.3.3.1}{Univariate case}{subsection.3.3}% 11
-\BOOKMARK [3][-]{subsubsection.3.3.2}{Multivariate case}{subsection.3.3}% 12
-\BOOKMARK [3][-]{subsubsection.3.3.3}{Technicalities on parallel implementation}{subsection.3.3}% 13
-\BOOKMARK [2][-]{subsection.3.4}{The complete method}{section.3}% 14
-\BOOKMARK [3][-]{subsubsection.3.4.1}{Univariate case with fixed variance}{subsection.3.4}% 15
-\BOOKMARK [3][-]{subsubsection.3.4.2}{Multivariate case with fixed variance}{subsection.3.4}% 16
-\BOOKMARK [3][-]{subsubsection.3.4.3}{Univariate case with both mean and variance unknown}{subsection.3.4}% 17
-\BOOKMARK [1][-]{section.4}{Numerical Experiments}{}% 18
-\BOOKMARK [2][-]{subsection.4.1}{Univariate g-and-k distribution}{section.4}% 19
-\BOOKMARK [3][-]{subsubsection.4.1.1}{ABC and coupled Markov chain Monte Carlo method}{subsection.4.1}% 20
+\BOOKMARK [0][-]{chapter.1}{Introduction}{}% 1
+\BOOKMARK [0][-]{chapter.2}{Methods}{}% 2
+\BOOKMARK [1][-]{section.2.1}{Unbiased Markov chain Monte Carlo methods with couplings}{chapter.2}% 3
+\BOOKMARK [2][-]{subsection.2.1.1}{Parallelized implementation results}{section.2.1}% 4
+\BOOKMARK [1][-]{section.2.2}{Approximate Bayesian Computation}{chapter.2}% 5
+\BOOKMARK [0][-]{chapter.3}{Implementation}{}% 6
+\BOOKMARK [1][-]{section.3.1}{Approximate Bayesian Computation}{chapter.3}% 7
+\BOOKMARK [2][-]{subsection.3.1.1}{Univariate case}{section.3.1}% 8
+\BOOKMARK [1][-]{section.3.2}{Multivariate case}{chapter.3}% 9
+\BOOKMARK [1][-]{section.3.3}{Unbiased Markov chain Monte Carlo methods with coupling}{chapter.3}% 10
+\BOOKMARK [2][-]{subsection.3.3.1}{Univariate case}{section.3.3}% 11
+\BOOKMARK [2][-]{subsection.3.3.2}{Multivariate case}{section.3.3}% 12
+\BOOKMARK [2][-]{subsection.3.3.3}{Technicalities on parallel implementation}{section.3.3}% 13
+\BOOKMARK [1][-]{section.3.4}{The complete method}{chapter.3}% 14
+\BOOKMARK [2][-]{subsection.3.4.1}{Univariate case with fixed variance}{section.3.4}% 15
+\BOOKMARK [2][-]{subsection.3.4.2}{Multivariate case with fixed variance}{section.3.4}% 16
+\BOOKMARK [2][-]{subsection.3.4.3}{Univariate case with both mean and variance unknown}{section.3.4}% 17
+\BOOKMARK [0][-]{chapter.4}{Numerical Experiments}{}% 18
+\BOOKMARK [1][-]{section.4.1}{Univariate g-and-k distribution}{chapter.4}% 19
+\BOOKMARK [2][-]{subsection.4.1.1}{ABC and coupled Markov chain Monte Carlo method}{section.4.1}% 20
+\BOOKMARK [0][-]{chapter*.35}{Bibliography}{}% 21

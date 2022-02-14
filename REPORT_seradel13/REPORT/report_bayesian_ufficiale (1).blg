@@ -1,15 +1,15 @@
 [0] Config.pm:302> INFO - This is Biber 2.11
-[2] Config.pm:305> INFO - Logfile is 'report_bayesian_ufficiale (1).blg'
-[48] biber-MSWIN32:313> INFO - === 
-[155] Biber.pm:371> INFO - Reading 'report_bayesian_ufficiale (1).bcf'
-[286] Biber.pm:857> INFO - Found 8 citekeys in bib section 0
-[314] Biber.pm:3976> INFO - Processing section 0
-[331] Biber.pm:4136> INFO - Looking for bibtex format file 'biblio.bib' for section 0
-[343] bibtex.pm:1500> INFO - LaTeX decoding ...
-[362] bibtex.pm:1316> INFO - Found BibTeX data source 'biblio.bib'
-[424] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[425] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[428] Biber.pm:3804> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
-[428] Biber.pm:3810> INFO - No sort tailoring available for locale 'en-US'
-[452] bbl.pm:617> INFO - Writing 'report_bayesian_ufficiale (1).bbl' with encoding 'UTF-8'
-[462] bbl.pm:720> INFO - Output to report_bayesian_ufficiale (1).bbl
+[1] Config.pm:305> INFO - Logfile is 'report_bayesian_ufficiale (1).blg'
+[277] biber-MSWIN32:313> INFO - === 
+[472] Biber.pm:371> INFO - Reading 'report_bayesian_ufficiale (1).bcf'
+[654] Biber.pm:857> INFO - Found 8 citekeys in bib section 0
+[704] Biber.pm:3976> INFO - Processing section 0
+[810] Biber.pm:4136> INFO - Looking for bibtex format file 'biblio.bib' for section 0
+[832] bibtex.pm:1500> INFO - LaTeX decoding ...
+[875] bibtex.pm:1316> INFO - Found BibTeX data source 'biblio.bib'
+[1093] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1093] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1094] Biber.pm:3804> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[1094] Biber.pm:3810> INFO - No sort tailoring available for locale 'en-US'
+[1178] bbl.pm:617> INFO - Writing 'report_bayesian_ufficiale (1).bbl' with encoding 'UTF-8'
+[1323] bbl.pm:720> INFO - Output to report_bayesian_ufficiale (1).bbl

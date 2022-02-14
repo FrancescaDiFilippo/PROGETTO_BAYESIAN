@@ -2,7 +2,8 @@
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
-\documentclass {article}
+%\documentclass {article}
+\documentclass[11pt,a4paper,oneside]{report}
 %
 \usepackage[autostyle, italian=guillemets]{csquotes}
 \usepackage[backend=biber]{biblatex}
@@ -87,23 +88,23 @@
 % Print the title
 \maketitle
 
-%----------------------------------------------------------------------------------------
-%	ARTICLE CONTENTS
-%----------------------------------------------------------------------------------------
+\tableofcontents
 
-\section{Introduction}
+
+
+\chapter{Introduction}
 
 \lettrine[nindent=0em,lines=3]{T}he aim of our project is to deal with two problems that can affect the same computation. The first one is to speed up Markov chain Monte Carlo (MCMC) methods using parallelization, while the second one is to manage the case in which the likelihood is computationally intractable. To solve the first problem, we used the Unbiased Markov chain Monte Carlo methods with couplings, instead for the second problem we used the Approximate Bayesian Computation.
 
 %------------------------------------------------
 
-\section{Methods}
+\chapter{Methods}
 
 %Parlare dei metodi di ABC e di Maximal coupling (con time average) in modo separato.
 %
 %poi parlare qua di come siano stati messi insieme o nella sezione dopo?
 
-\subsection{Unbiased Markov chain Monte Carlo methods with couplings}
+\section{Unbiased Markov chain Monte Carlo methods with couplings}
 
 
 Markov chain Monte Carlo (MCMC) methods provide consistent approximations of high dimensional integrals, namely as the number of iterations goes to infinity. However, these estimators can be potentially biased for any fixed number of iterations, hence the aim is to propose a general construction to produce unbiased estimators of integrals with respect to a target probability distribution. 
@@ -235,7 +236,7 @@ and hence the output follows a maximal coupling of $p$ and $q$. A complete discu
 
 Moreover, the absence of bias allows the application on time budget-constrained parallel simulation: independent unbiased estimators with finite variance can be generated on separate machines and combined into consistent and asymptotically normal estimators, leading to better results with respect to the non-parallelized version.
 
-\subsubsection{Parallelized implementation results}
+\subsection{Parallelized implementation results}
 The unbiased Markov chain Monte Carlo method with couplings can be implemented allowing parallelization. Indeed, this method consist in generating many couples of chains, any couple can be given to a single core to be processed, instead of generating each couple sequentially.
 
 To understand how to exploit the unbiasness of time-averaged estimator $H_{k:n}(X,Y)$ and how to find a criteria for settings parameters like number of iterations or number of chains, here we report some results.
@@ -272,7 +273,7 @@ Assuming that $m > \tau$ with large probability, it is proved that we can retrie
 In other words, the bias of the MCMC algorithm can be removed at the cost of an increased variance, which can in turn be reduced by choosing sufficiently large values of $k$ and $m$. This results in a trade-off with the desired level of parallelism: one might prefer to keep $k$ and $m$ small, yielding a suboptimal efficiency for $H_{k:m}(X,Y)$, but enabling more independent copies to be generated in a given computing time.
 
 
-\subsection{Approximate Bayesian Computation}
+\section{Approximate Bayesian Computation}
 
 Likelihood-free methods are used to solve the problem that concerns the intractable evaluation of the likelihood function. A way to solve this issue is to use Approximate Bayesian Computation method \cite{sisson2018overview}, in which samples are produced form an approximation of the posterios distribution.
 Doing so the likelihood doesn't need to be evaluated in teh algorithm.
@@ -335,11 +336,11 @@ Output:
 
 
 %------------------------------------------------
-\section{Implementation}
+\chapter{Implementation}
 
-\subsection{Approximate Bayesian Computation}
+\section{Approximate Bayesian Computation}
 
-\subsubsection{Univariate case}
+\subsection{Univariate case}
 The univariate ABC algorithm begins with generating 1000 samples from a Normal Distribution:
 $$
 	y_{obs} \sim  \mathcal{N} (\mu_{obs}, \sigma_{obs} ^2)
@@ -431,15 +432,15 @@ The posterior distribution has $\mu=10.2527$ and $\sigma^2=0.0298$
 	%\label{abch18}
 \end{figure}
 
-\subsection{Multivariate case}
+\section{Multivariate case}
 The multivariate ABC method is an extension of the univariate one. Samples has been generated from a Multivariate Normal Distribution.\\
 The distance is the Mahalanobis distance between  $s_{0}$ and $s_{obs}$ and the summary statistic chosen is the sample mean.
 
 
 
-\subsection{Unbiased Markov chain Monte Carlo methods with coupling}
+\section{Unbiased Markov chain Monte Carlo methods with coupling}
 
-\subsubsection{Univariate case}
+\subsection{Univariate case}
 
 The idea is to apply the method of coupling to a Metropolis-Hasting MCMC, obtaining two chains ${X_t}, \: {Y_t}$ that can be used to compute the time-average estimator $H_{k:m}(X,Y)$ defined above. In this way we can achieve an estimate of the unknow parameter \emph{k}.
 
@@ -516,7 +517,7 @@ In figure \ref{coupl1} we can see that the chains meet after few iterations and 
 
 \newpage
 
-\subsubsection{Multivariate case}
+\subsection{Multivariate case}
 
 The univariate case can be easily extended to multivariate dimension, we used the following bivariate model:
 $$ \boldsymbol{Y} | \boldsymbol{\mu} \overset{iid}{\sim} \mathcal{N}(\mu, \Sigma_{obs} ) \quad \text{for } i = 1 ... n $$
@@ -605,7 +606,7 @@ Here the plot of the chains of the two variables, then the plots of the posterio
 
 \clearpage
 
-\subsubsection{Technicalities on parallel implementation}
+\subsection{Technicalities on parallel implementation}
 
 In order to achieve parallelization, our choice is to use Python's standard package for parallelization, called multiprocessing (https://docs.python.org/3/library/multiprocessing.html). The Python's architecture does not allow multitreading parallelization, which would be optimal in terms of memory efficiency.
 
@@ -616,9 +617,9 @@ As we achieved the goal to parallelize the computation we do not attempt any oth
  
 \clearpage
 
-\subsection{The complete method}
+\section{The complete method}
 
-\subsubsection{Univariate case with fixed variance}
+\subsection{Univariate case with fixed variance}
 
 We implemented an MCMC algorithm using Approximate Bayesian Computation to approximate the likelihood and Coupled Markov chanis.
 The algorithm we computed: 
@@ -734,7 +735,7 @@ We can see in figure \ref{complete1} that the chains meet after few iterations r
 
 
 
-\subsubsection{Multivariate case with fixed variance}
+\subsection{Multivariate case with fixed variance}
 
 The complete method can be easily extended to the multivariate version. We performed the same bivariate model that we used in the single multivariate coupling.
 $$ \boldsymbol{Y} | \boldsymbol{\mu} \overset{iid}{\sim} \mathcal{N}(\mu, \Sigma_{obs} ) \quad \text{for } i = 1 ... n $$
@@ -811,7 +812,7 @@ Here the plot of the chains of the two variables, then the plots of the posterio
 
 
 
-\subsubsection{Univariate case with both mean and variance unknown}
+\subsection{Univariate case with both mean and variance unknown}
 
 This is also an extension of the Univariate case with fixed variance where $\theta = (\mu,\sigma)$
 
@@ -945,12 +946,12 @@ In \ref{muhistdouble} and \ref{sigmahistdouble} we can observe the sampled poste
 
 
 
-	\section{Numerical Experiments}
+\chapter{Numerical Experiments}
 In order to test our method on a more complex problem, we followed the common numerical experiment in the literature: ABC applied on the g-and-k distribution.
 The goal is to, not only, apply ABC algorithm to this problem, but also the Unbiased coupled Markov chain Monte Carlo method.
 
 
-\subsection{Univariate g-and-k distribution}
+\section{Univariate g-and-k distribution}
 
 A classical numerical experiments in the ABC literature is to test the algorithm on the univariate g-and-k distribution.
 The likelihood is intractable, therefore the distribution is defined in terms of its quantile function:
@@ -1070,7 +1071,7 @@ $$
 
 
 
-\subsubsection{ABC and coupled Markov chain Monte Carlo method}
+\subsection{ABC and coupled Markov chain Monte Carlo method}
 given $\theta =( a,b,g,k )$
 \begin{enumerate}
 
@@ -1142,7 +1143,7 @@ $$ y_{2} \sim quantile function(z(r),\theta_{2})$$
 Therefore, if $\theta_{1}  $ and $  \theta_{2}$ from maximal coupling are identical, then also the chains $y_{1} $ and $  y_{2}$ will stay together.
 
 \newpage
-\printbibliography
+\printbibliography[heading=bibintoc]
 
 % Bibliography - this is intentionally simple in this template
 
