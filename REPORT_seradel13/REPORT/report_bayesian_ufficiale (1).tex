@@ -73,9 +73,11 @@
 }
 \date{\today} % Leave empty to omit a date
 \renewcommand{\maketitlehookd}{%
-\begin{abstract}
-\noindent \blindtext % Dummy abstract text - replace \blindtext with your abstract text
-\end{abstract}
+	
+%\begin{abstract}
+%\noindent \blindtext % Dummy abstract text - replace \blindtext with your abstract text
+%\end{abstract}
+
 }
 
 %----------------------------------------------------------------------------------------
@@ -289,7 +291,7 @@ Therefore we can rewrite the acceptance probability, after some semplification, 
  $$ \alpha(\theta^{(i-1)},\theta')= \min  \{ 1, \frac{\pi_{ABC}(\theta'|s_{obs})g(\theta',\theta^{(i-1)})}{\pi_{ABC}(\theta^{(i-1)}|s_{obs})g(\theta^{(i-1)},\theta') } \} $$
  $$ =\min  \{ 1, \frac{\pi_{ABC}(K_h(\parallel s'-s_{obs}\parallel)   \pi(\theta')g(\theta',\theta^{(i-1)})}{K_h(\parallel s^{(i-1)}-s_{obs}\parallel)   \pi(\theta^{(i-1)})g(\theta^{(i-1)},\theta') } \} $$
 
-sucht that there's no direct evaluation of the likelihood function.
+such that there's no direct evaluation of the likelihood function.
 
 A key task in this computation is to set efficiently both the scaling parameter h and the summary statistics:
 the former parameter must be small to obtain the resulting estimate of the posterior closer to the true posterior. While the latter must be large enough to contain informations and low enough to avoid curse of dimensionality.
