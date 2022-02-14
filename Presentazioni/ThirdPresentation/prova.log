@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.9.24)  14 FEB 2022 20:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.9.24)  14 FEB 2022 20:06
 entering extended mode
 **./prova.tex
 (prova.tex
@@ -1818,10 +1818,10 @@ File: doublecoupling_chainmeeting/doublecoupling_mu_chain_meeting.png Graphic f
 ile (type png)
 <use doublecoupling_chainmeeting/doublecoupling_mu_chain_meeting.png>
 Package pdftex.def Info: doublecoupling_chainmeeting/doublecoupling_mu_chain_me
-eting.png  used on input line 310.
-(pdftex.def)             Requested size: 170.71892pt x 71.13177pt.
+eting.png  used on input line 315.
+(pdftex.def)             Requested size: 170.71892pt x 65.44159pt.
 
-Overfull \hbox (39.61148pt too wide) in paragraph at lines 310--310
+Overfull \hbox (39.61148pt too wide) in paragraph at lines 315--315
 [][] 
  []
 
@@ -1831,10 +1831,10 @@ File: doublecoupling_pack/doublecoupling_sampling_mu.png Graphic file (type png
 )
 <use doublecoupling_pack/doublecoupling_sampling_mu.png>
 Package pdftex.def Info: doublecoupling_pack/doublecoupling_sampling_mu.png  us
-ed on input line 310.
-(pdftex.def)             Requested size: 170.70569pt x 71.13177pt.
+ed on input line 315.
+(pdftex.def)             Requested size: 170.70569pt x 65.44159pt.
 
-Overfull \hbox (39.59825pt too wide) in paragraph at lines 310--310
+Overfull \hbox (39.59825pt too wide) in paragraph at lines 315--315
 [][]  
  []
 
@@ -1844,26 +1844,26 @@ File: doublecoupling_pack/doublecoupling_mu_histogram_kernel.png Graphic file (
 type png)
 <use doublecoupling_pack/doublecoupling_mu_histogram_kernel.png>
 Package pdftex.def Info: doublecoupling_pack/doublecoupling_mu_histogram_kernel
-.png  used on input line 310.
+.png  used on input line 315.
 (pdftex.def)             Requested size: 170.70569pt x 142.26357pt.
 
-Overfull \hbox (39.59825pt too wide) in paragraph at lines 310--310
+Overfull \hbox (39.59825pt too wide) in paragraph at lines 315--315
 [][]  
  []
 
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 310.
+(Font)              <14.4> on input line 315.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <14.4> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 310.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 315.
 File: beamerthemepolimi_img//decoration.pdf Graphic file (type pdf)
 <use beamerthemepolimi_img//decoration.pdf>
 Package pdftex.def Info: beamerthemepolimi_img//decoration.pdf  used on input l
-ine 310.
+ine 315.
 (pdftex.def)             Requested size: 364.19536pt x 7.19064pt.
 File: beamerthemepolimi_img//logo_bandiera.png Graphic file (type png)
 <use beamerthemepolimi_img//logo_bandiera.png>
 Package pdftex.def Info: beamerthemepolimi_img//logo_bandiera.png  used on inpu
-t line 310.
+t line 315.
 (pdftex.def)             Requested size: 87.2322pt x 4.89998pt.
 [12
 
@@ -1876,10 +1876,10 @@ File: doublecoupling_chainmeeting/doublecoupling_sigma_chain_meeting.png Graphi
 c file (type png)
 <use doublecoupling_chainmeeting/doublecoupling_sigma_chain_meeting.png>
 Package pdftex.def Info: doublecoupling_chainmeeting/doublecoupling_sigma_chain
-_meeting.png  used on input line 329.
-(pdftex.def)             Requested size: 170.71892pt x 71.13177pt.
+_meeting.png  used on input line 337.
+(pdftex.def)             Requested size: 170.71892pt x 65.44159pt.
 
-Overfull \hbox (39.61148pt too wide) in paragraph at lines 329--329
+Overfull \hbox (39.61148pt too wide) in paragraph at lines 337--337
 [][] 
  []
 
@@ -1889,10 +1889,10 @@ File: doublecoupling_pack/doublecoupling_sampling_sigma.png Graphic file (type
 png)
 <use doublecoupling_pack/doublecoupling_sampling_sigma.png>
 Package pdftex.def Info: doublecoupling_pack/doublecoupling_sampling_sigma.png 
- used on input line 329.
-(pdftex.def)             Requested size: 170.70569pt x 71.13177pt.
+ used on input line 337.
+(pdftex.def)             Requested size: 170.70569pt x 65.44159pt.
 
-Overfull \hbox (39.59825pt too wide) in paragraph at lines 329--329
+Overfull \hbox (39.59825pt too wide) in paragraph at lines 337--337
 [][]  
  []
 
@@ -1902,28 +1902,13 @@ File: doublecoupling_pack/doublecoupling_sigma_histogram_kernel.png Graphic fil
 e (type png)
 <use doublecoupling_pack/doublecoupling_sigma_histogram_kernel.png>
 Package pdftex.def Info: doublecoupling_pack/doublecoupling_sigma_histogram_ker
-nel.png  used on input line 329.
+nel.png  used on input line 337.
 (pdftex.def)             Requested size: 170.70569pt x 142.26357pt.
 
-Overfull \hbox (39.59825pt too wide) in paragraph at lines 329--329
+Overfull \hbox (39.59825pt too wide) in paragraph at lines 337--337
 [][]  
  []
 
-File: beamerthemepolimi_img//decoration.pdf Graphic file (type pdf)
-<use beamerthemepolimi_img//decoration.pdf>
-Package pdftex.def Info: beamerthemepolimi_img//decoration.pdf  used on input l
-ine 329.
-(pdftex.def)             Requested size: 364.19536pt x 7.19064pt.
-File: beamerthemepolimi_img//logo_bandiera.png Graphic file (type png)
-<use beamerthemepolimi_img//logo_bandiera.png>
-Package pdftex.def Info: beamerthemepolimi_img//logo_bandiera.png  used on inpu
-t line 329.
-(pdftex.def)             Requested size: 87.2322pt x 4.89998pt.
-[13
-
- <./doublecoupling_chainmeeting/doublecoupling_sigma_chain_meeting.png> <./doub
-lecoupling_pack/doublecoupling_sampling_sigma.png> <./doublecoupling_pack/doubl
-ecoupling_sigma_histogram_kernel.png>]
 File: beamerthemepolimi_img//decoration.pdf Graphic file (type pdf)
 <use beamerthemepolimi_img//decoration.pdf>
 Package pdftex.def Info: beamerthemepolimi_img//decoration.pdf  used on input l
@@ -1934,18 +1919,33 @@ File: beamerthemepolimi_img//logo_bandiera.png Graphic file (type png)
 Package pdftex.def Info: beamerthemepolimi_img//logo_bandiera.png  used on inpu
 t line 337.
 (pdftex.def)             Requested size: 87.2322pt x 4.89998pt.
+[13
+
+ <./doublecoupling_chainmeeting/doublecoupling_sigma_chain_meeting.png> <./doub
+lecoupling_pack/doublecoupling_sampling_sigma.png> <./doublecoupling_pack/doubl
+ecoupling_sigma_histogram_kernel.png>]
+File: beamerthemepolimi_img//decoration.pdf Graphic file (type pdf)
+<use beamerthemepolimi_img//decoration.pdf>
+Package pdftex.def Info: beamerthemepolimi_img//decoration.pdf  used on input l
+ine 345.
+(pdftex.def)             Requested size: 364.19536pt x 7.19064pt.
+File: beamerthemepolimi_img//logo_bandiera.png Graphic file (type png)
+<use beamerthemepolimi_img//logo_bandiera.png>
+Package pdftex.def Info: beamerthemepolimi_img//logo_bandiera.png  used on inpu
+t line 345.
+(pdftex.def)             Requested size: 87.2322pt x 4.89998pt.
  [14
 
 ]
 File: beamerthemepolimi_img//decoration.pdf Graphic file (type pdf)
 <use beamerthemepolimi_img//decoration.pdf>
 Package pdftex.def Info: beamerthemepolimi_img//decoration.pdf  used on input l
-ine 351.
+ine 359.
 (pdftex.def)             Requested size: 364.19536pt x 7.19064pt.
 File: beamerthemepolimi_img//logo_bandiera.png Graphic file (type png)
 <use beamerthemepolimi_img//logo_bandiera.png>
 Package pdftex.def Info: beamerthemepolimi_img//logo_bandiera.png  used on inpu
-t line 351.
+t line 359.
 (pdftex.def)             Requested size: 87.2322pt x 4.89998pt.
  [15
 
@@ -1954,22 +1954,22 @@ t line 351.
 File: immagini_mario/density_quantile.png Graphic file (type png)
 <use immagini_mario/density_quantile.png>
 Package pdftex.def Info: immagini_mario/density_quantile.png  used on input lin
-e 398.
+e 406.
 (pdftex.def)             Requested size: 113.81123pt x 85.36057pt.
 
-Overfull \hbox (15.47816pt too wide) in paragraph at lines 398--398
+Overfull \hbox (15.47816pt too wide) in paragraph at lines 406--406
  [] 
  []
 
 File: beamerthemepolimi_img//decoration.pdf Graphic file (type pdf)
 <use beamerthemepolimi_img//decoration.pdf>
 Package pdftex.def Info: beamerthemepolimi_img//decoration.pdf  used on input l
-ine 398.
+ine 406.
 (pdftex.def)             Requested size: 364.19536pt x 7.19064pt.
 File: beamerthemepolimi_img//logo_bandiera.png Graphic file (type png)
 <use beamerthemepolimi_img//logo_bandiera.png>
 Package pdftex.def Info: beamerthemepolimi_img//logo_bandiera.png  used on inpu
-t line 398.
+t line 406.
 (pdftex.def)             Requested size: 87.2322pt x 4.89998pt.
 [16
 
@@ -1977,12 +1977,12 @@ t line 398.
 File: beamerthemepolimi_img//decoration.pdf Graphic file (type pdf)
 <use beamerthemepolimi_img//decoration.pdf>
 Package pdftex.def Info: beamerthemepolimi_img//decoration.pdf  used on input l
-ine 424.
+ine 432.
 (pdftex.def)             Requested size: 364.19536pt x 7.19064pt.
 File: beamerthemepolimi_img//logo_bandiera.png Graphic file (type png)
 <use beamerthemepolimi_img//logo_bandiera.png>
 Package pdftex.def Info: beamerthemepolimi_img//logo_bandiera.png  used on inpu
-t line 424.
+t line 432.
 (pdftex.def)             Requested size: 87.2322pt x 4.89998pt.
  [17
 
@@ -1990,12 +1990,12 @@ t line 424.
 File: beamerthemepolimi_img//decoration.pdf Graphic file (type pdf)
 <use beamerthemepolimi_img//decoration.pdf>
 Package pdftex.def Info: beamerthemepolimi_img//decoration.pdf  used on input l
-ine 472.
+ine 480.
 (pdftex.def)             Requested size: 364.19536pt x 7.19064pt.
 File: beamerthemepolimi_img//logo_bandiera.png Graphic file (type png)
 <use beamerthemepolimi_img//logo_bandiera.png>
 Package pdftex.def Info: beamerthemepolimi_img//logo_bandiera.png  used on inpu
-t line 472.
+t line 480.
 (pdftex.def)             Requested size: 87.2322pt x 4.89998pt.
  [18
 
@@ -2003,12 +2003,12 @@ t line 472.
 File: beamerthemepolimi_img//decoration.pdf Graphic file (type pdf)
 <use beamerthemepolimi_img//decoration.pdf>
 Package pdftex.def Info: beamerthemepolimi_img//decoration.pdf  used on input l
-ine 472.
+ine 480.
 (pdftex.def)             Requested size: 364.19536pt x 7.19064pt.
 File: beamerthemepolimi_img//logo_bandiera.png Graphic file (type png)
 <use beamerthemepolimi_img//logo_bandiera.png>
 Package pdftex.def Info: beamerthemepolimi_img//logo_bandiera.png  used on inpu
-t line 472.
+t line 480.
 (pdftex.def)             Requested size: 87.2322pt x 4.89998pt.
  [19
 
@@ -2019,10 +2019,10 @@ File: doublecoupling_pack/doublecoupling_sigma_chain_meeting.png Graphic file (
 type png)
 <use doublecoupling_pack/doublecoupling_sigma_chain_meeting.png>
 Package pdftex.def Info: doublecoupling_pack/doublecoupling_sigma_chain_meeting
-.png  used on input line 492.
+.png  used on input line 500.
 (pdftex.def)             Requested size: 170.70569pt x 71.13177pt.
 
-Overfull \hbox (39.59825pt too wide) in paragraph at lines 492--492
+Overfull \hbox (39.59825pt too wide) in paragraph at lines 500--500
 [][] 
  []
 
@@ -2030,10 +2030,10 @@ File: doublecoupling_pack/doublecoupling_sampling_sigma.png Graphic file (type
 png)
 <use doublecoupling_pack/doublecoupling_sampling_sigma.png>
 Package pdftex.def Info: doublecoupling_pack/doublecoupling_sampling_sigma.png 
- used on input line 492.
+ used on input line 500.
 (pdftex.def)             Requested size: 170.70569pt x 71.13177pt.
 
-Overfull \hbox (39.59825pt too wide) in paragraph at lines 492--492
+Overfull \hbox (39.59825pt too wide) in paragraph at lines 500--500
 [][]  
  []
 
@@ -2041,22 +2041,22 @@ File: doublecoupling_pack/doublecoupling_sigma_histogram_kernel.png Graphic fil
 e (type png)
 <use doublecoupling_pack/doublecoupling_sigma_histogram_kernel.png>
 Package pdftex.def Info: doublecoupling_pack/doublecoupling_sigma_histogram_ker
-nel.png  used on input line 492.
+nel.png  used on input line 500.
 (pdftex.def)             Requested size: 142.25475pt x 142.26357pt.
 
-Overfull \hbox (11.14731pt too wide) in paragraph at lines 492--492
+Overfull \hbox (11.14731pt too wide) in paragraph at lines 500--500
 [][]  
  []
 
 File: beamerthemepolimi_img//decoration.pdf Graphic file (type pdf)
 <use beamerthemepolimi_img//decoration.pdf>
 Package pdftex.def Info: beamerthemepolimi_img//decoration.pdf  used on input l
-ine 492.
+ine 500.
 (pdftex.def)             Requested size: 364.19536pt x 7.19064pt.
 File: beamerthemepolimi_img//logo_bandiera.png Graphic file (type png)
 <use beamerthemepolimi_img//logo_bandiera.png>
 Package pdftex.def Info: beamerthemepolimi_img//logo_bandiera.png  used on inpu
-t line 492.
+t line 500.
 (pdftex.def)             Requested size: 87.2322pt x 4.89998pt.
 [20
 
@@ -2065,12 +2065,12 @@ No file prova.bbl.
 File: beamerthemepolimi_img//decoration.pdf Graphic file (type pdf)
 <use beamerthemepolimi_img//decoration.pdf>
 Package pdftex.def Info: beamerthemepolimi_img//decoration.pdf  used on input l
-ine 497.
+ine 505.
 (pdftex.def)             Requested size: 364.19536pt x 7.19064pt.
 File: beamerthemepolimi_img//logo_bandiera.png Graphic file (type png)
 <use beamerthemepolimi_img//logo_bandiera.png>
 Package pdftex.def Info: beamerthemepolimi_img//logo_bandiera.png  used on inpu
-t line 497.
+t line 505.
 (pdftex.def)             Requested size: 87.2322pt x 4.89998pt.
 [21
 
@@ -2118,7 +2118,7 @@ sers/franc/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy7.pfb><C:/Us
 ers/franc/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Use
 rs/franc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm
 10.pfb>
-Output written on prova.pdf (21 pages, 1811431 bytes).
+Output written on prova.pdf (21 pages, 1814814 bytes).
 PDF statistics:
  461 PDF objects out of 1000 (max. 8388607)
  46 named destinations out of 1000 (max. 500000)
