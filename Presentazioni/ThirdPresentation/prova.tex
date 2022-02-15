@@ -58,6 +58,7 @@
 \title{Coupled Markov chains with applications to Approximate Bayesian Computation for model based clustering}
 %\subtitle{Subtitle}
 \author{E. Bertoni, M. Caldarini, F. Di Filippo, G. Gabrielli, E. Musiari}
+%\textsuperscript{Turors: Mario Beraha, Riccardo Corradin}
 \date{15 February 2022}
 
 
@@ -299,22 +300,45 @@
 %-------------------------------------------------------------------
 \begin{frame}
 	\frametitle{Results for parameter $\mu$}
+%	\begin{columns}
+%		\begin{column}{0.4\textwidth}
+%		{\scriptsize \textbf{Single coupled chains}}\\
+%		\includegraphics[width=5.5cm,height=2.5cm]{doublecoupling_chainmeeting/doublecoupling_mu_chain_meeting}
+%		\vspace{0.2cm}
+%	{	\scriptsize \textbf{Samplings from all accepted chains }}\\
+%	\includegraphics[width=5.5cm,height=2.5cm]{doublecoupling_pack/doublecoupling_sampling_mu}
+%		%						%	
+%		\end{column}
+%	\begin{column}{0.4\textwidth}
+%		{\scriptsize \textbf{Sampling histogram with estimated distribution}}\\
+%		\includegraphics[width=6cm,height=4cm]{doublecoupling_pack/doublecoupling_mu_histogram_kernel}
+%	\end{column}
+%	\end{columns}
+\vspace{2mm}
 	\begin{columns}
-		\begin{column}{0.4\textwidth}
-		{\scriptsize \textbf{Single coupled chains}}\\
-		\includegraphics[width=5.5cm,height=2.5cm]{doublecoupling_chainmeeting/doublecoupling_mu_chain_meeting}
-		\vspace{0.2cm}
-	{	\scriptsize \textbf{Samplings from all accepted chains }}\\
-	\includegraphics[width=5.5cm,height=2.5cm]{doublecoupling_pack/doublecoupling_sampling_mu}
-		%						%	
-		\end{column}
-	\begin{column}{0.4\textwidth}
-		{\scriptsize \textbf{Sampling histogram with estimated distribution}}\\
-		\includegraphics[width=6cm,height=4cm]{doublecoupling_pack/doublecoupling_mu_histogram_kernel}
-	\end{column}
-	\end{columns}
 
+		%\hspace{5mm}
+	\begin{column}{0.49\textwidth}
+		\centering
+		{\scriptsize \textbf{Single coupled chains}}\\
+		\vspace{-2mm}
+		\includegraphics[width=0.85\columnwidth]{doublecoupling_chainmeeting/doublecoupling_mu_chain_meeting}
+		\vspace{0.2cm}
+		{	\scriptsize \textbf{Samplings from all accepted chains }}\\
+		\includegraphics[width=\columnwidth]{doublecoupling_pack/doublecoupling_sampling_mu}
+		%						%	
+	\end{column}
+%\hspace{-25mm}
+	\begin{column}{0.49\textwidth}
+		\centering
+		{\scriptsize \textbf{Sampling histogram with estimated distribution}}\\
+		\vspace{3mm}
+		\includegraphics[width=\columnwidth]{doublecoupling_pack/doublecoupling_mu_histogram_kernel}
+	\end{column}
+\end{columns}
+ \vspace{3mm}
 	\small
+	\centering
 	Time Averaged Estimators mean obtained:	$ \mathbb{E}[H_{k:m}(X_{\mu}, Y_{\mu})] \simeq 9.8   % non so perchè non vada
 	$
 	
@@ -323,22 +347,49 @@
 \end{frame}
 \begin{frame}
 	\frametitle{Results for parameter $\sigma^2$}
+	
+	\vspace{2mm}
 	\begin{columns}
-		\begin{column}{0.4\textwidth}
+		
+		%\hspace{5mm}
+		\begin{column}{0.49\textwidth}
+			\centering
 			{\scriptsize \textbf{Single coupled chains}}\\
-			\includegraphics[width=5.5cm,height=2.5cm]{doublecoupling_chainmeeting/doublecoupling_sigma_chain_meeting}
+			\vspace{-2mm}
+			\includegraphics[width=0.85\columnwidth]{doublecoupling_chainmeeting/doublecoupling_sigma_chain_meeting}
 			\vspace{0.2cm}
 			{	\scriptsize \textbf{Samplings from all accepted chains }}\\
-			\includegraphics[width=5.5cm,height=2.5cm]{doublecoupling_pack/doublecoupling_sampling_sigma}
+			\includegraphics[width=\columnwidth]{doublecoupling_pack/doublecoupling_sampling_sigma}
 			%						%	
 		\end{column}
-		\begin{column}{0.4\textwidth}
+		%\hspace{-25mm}
+		\begin{column}{0.49\textwidth}
+			\centering
 			{\scriptsize \textbf{Sampling histogram with estimated distribution}}\\
-			\includegraphics[width=6cm,height=4cm]{doublecoupling_pack/doublecoupling_sigma_histogram_kernel}
+			\vspace{3mm}
+			\includegraphics[width=1\columnwidth]{doublecoupling_pack/doublecoupling_sigma_histogram_kernel}
 		\end{column}
 	\end{columns}
 	
+	
+%	
+%	\begin{columns}
+%		\begin{column}{0.4\textwidth}
+%			{\scriptsize \textbf{Single coupled chains}}\\
+%			\includegraphics[width=5.5cm,height=2.5cm]{doublecoupling_chainmeeting/doublecoupling_sigma_chain_meeting}
+%			\vspace{0.2cm}
+%			{	\scriptsize \textbf{Samplings from all accepted chains }}\\
+%			\includegraphics[width=5.5cm,height=2.5cm]{doublecoupling_pack/doublecoupling_sampling_sigma}
+%			%						%	
+%		\end{column}
+%		\begin{column}{0.4\textwidth}
+%			{\scriptsize \textbf{Sampling histogram with estimated distribution}}\\
+%			\includegraphics[width=6cm,height=4cm]{doublecoupling_pack/doublecoupling_sigma_histogram_kernel}
+%		\end{column}
+%	\end{columns}
+	\vspace{3mm}
 	\small
+	\centering
 	Time Averaged Estimators mean obtained:$\mathbb{E}[H_{k:m}(X_{\sigma^2}, Y_{\sigma^2})] \simeq 2.56   % non so perchè non vada
 	$
 	
@@ -399,12 +450,14 @@
 			
 		\end{block}
 		\end{column}
+	\hspace{-7mm}
 	\begin{column}{0.3\textwidth}
 		%\begin{minipage}{0.\textwidth}
-			
+		
 			\begin{center}
-				{\scriptsize \textbf{Quantile distribution: $y_{obs}$}}
-				\includegraphics[width=4cm,height=3cm]{immagini_mario/density_quantile}
+				{\scriptsize \textbf{\space Quantile distribution: $y_{obs}$}}
+					
+				\includegraphics[width=1.2\columnwidth]{immagini_mario/density_quantile}
 			\end{center}
 	%	\end{minipage}
 		\end{column}
@@ -421,11 +474,11 @@
 			\textbf{Initialization} 
 		\end{center}
 	\end{block}	
-	given $\theta =( a,b,g,k )$
+	Given $\theta =( a,b,g,k )$
 	
 	for k=1,2:
 	
-	 Untill $K_h(\|s_{k}^{(0)} - s_{obs}\|)>0$:
+	 Until $K_h(\|s_{k}^{(0)} - s_{obs}\|)>0$:
 		\begin{itemize}
 			\item Generate $\theta_{k}^{(0)} \sim \mathcal{U}([0,10]^4)$ from prior density.
 			\item Generate $z(r) \sim \mathcal{N}(0,1)$
@@ -490,21 +543,47 @@
 %------------------------------------------------------------------
 \begin{frame}
 	\frametitle{Results for parameter a}
-	\begin{columns}
-		\begin{column}{0.4\textwidth}
-			{\scriptsize \centering \textbf{Single coupled chains}}\\
-			\includegraphics[width=5.5cm,height=2.5cm]{gk_all_pack/gk_all_chain_meeeting_0}
+	
+	
+		\begin{columns}
+		
+		%\hspace{5mm}
+		\begin{column}{0.49\textwidth}
+			\centering
+			{\scriptsize \textbf{Single coupled chains}}\\
+			\vspace{1.5mm}
+			\includegraphics[width=0.85\columnwidth]{gk_all_pack/gk_all_chain_meeeting_0}
 			\vspace{0.2cm}
-			{\scriptsize \centering \textbf{Samplings from all accepted chains }}\\
-			\includegraphics[width=5.5cm,height=2.5cm]{gk_all_pack/gk_all_sampling_0}
+			{	\scriptsize \textbf{Samplings from all accepted chains }}\\
+			\includegraphics[width=\columnwidth]{gk_all_pack/gk_all_sampling_0}
 			%						%	
 		\end{column}
-		\begin{column}{0.4\textwidth}
-			{	\scriptsize \centering \textbf{Sampling histogram with estimated distribution}}\\
-			\includegraphics[width=6cm,height=4cm]{gk_all_pack/gk_all_histogram_kernel_0}
-			
+		\hspace{-6mm}
+		\begin{column}{0.49\textwidth}
+			\centering
+			{\scriptsize \textbf{Sampling histogram with estimated distribution}}\\
+			\vspace{3mm}
+			\includegraphics[width=1.1\columnwidth]{gk_all_pack/gk_all_histogram_kernel_0}
 		\end{column}
 	\end{columns}
+	
+	
+	
+%	\begin{columns}
+%		\begin{column}{0.4\textwidth}
+%			{\scriptsize \centering \textbf{Single coupled chains}}\\
+%			\includegraphics[width=5.5cm,height=2.5cm]{gk_all_pack/gk_all_chain_meeeting_0}
+%			\vspace{0.2cm}
+%			{\scriptsize \centering \textbf{Samplings from all accepted chains }}\\
+%			\includegraphics[width=5.5cm,height=2.5cm]{gk_all_pack/gk_all_sampling_0}
+%			%						%	
+%		\end{column}
+%		\begin{column}{0.4\textwidth}
+%			{	\scriptsize \centering \textbf{Sampling histogram with estimated distribution}}\\
+%			\includegraphics[width=6cm,height=4cm]{gk_all_pack/gk_all_histogram_kernel_0}
+%			
+%		\end{column}
+%	\end{columns}
 	\end{frame}
 %\begin{frame}
 %	\frametitle{Results for parameter b}
@@ -526,21 +605,48 @@
 %\end{frame}
 \begin{frame}
 	\frametitle{Results for parameter g}
+	
+	
 	\begin{columns}
-		\begin{column}{0.4\textwidth}
-			{\scriptsize \centering \textbf{Single coupled chains}}\\
-			\includegraphics[width=5.5cm,height=2.5cm]{gk_all_pack/gk_all_chain_meeeting_2}
+		
+		\hspace{-5mm}
+		\begin{column}{0.49\textwidth}
+			\centering
+			{\scriptsize \textbf{Single coupled chains}}\\
+			\vspace{1.5mm}
+			\includegraphics[width=0.85\columnwidth]{gk_all_pack/gk_all_chain_meeeting_2}
 			\vspace{0.2cm}
-			{\scriptsize \centering \textbf{Samplings from all accepted chains}}\\
-			\includegraphics[width=5.5cm,height=2.5cm]{gk_all_pack/gk_all_sampling_2}
+			{	\scriptsize \textbf{Samplings from all accepted chains }}\\
+			\includegraphics[width=\columnwidth]{gk_all_pack/gk_all_sampling_2}
 			%						%	
 		\end{column}
-		\begin{column}{0.4\textwidth}
-			{	\scriptsize \centering \textbf{Sampling histogram \\ with estimated distribution }}\\
-			\includegraphics[width=6cm,height=4cm]{gk_all_pack/gk_all_histogram_kernel_2}
-			
+		\hspace{-13mm}
+		\begin{column}{0.49\textwidth}
+			\centering
+			{\scriptsize \textbf{Sampling histogram with estimated distribution}}\\
+			\vspace{3mm}
+			\includegraphics[width=1.15\columnwidth]{gk_all_pack/gk_all_histogram_kernel_2}
 		\end{column}
 	\end{columns}
+	
+	
+	
+	
+%	\begin{columns}
+%		\begin{column}{0.4\textwidth}
+%			{\scriptsize \centering \textbf{Single coupled chains}}\\
+%			\includegraphics[width=5.5cm,height=2.5cm]{gk_all_pack/gk_all_chain_meeeting_2}
+%			\vspace{0.2cm}
+%			{\scriptsize \centering \textbf{Samplings from all accepted chains}}\\
+%			\includegraphics[width=5.5cm,height=2.5cm]{gk_all_pack/gk_all_sampling_2}
+%			%						%	
+%		\end{column}
+%		\begin{column}{0.4\textwidth}
+%			{	\scriptsize \centering \textbf{Sampling histogram \\ with estimated distribution }}\\
+%			\includegraphics[width=6cm,height=4cm]{gk_all_pack/gk_all_histogram_kernel_2}
+%			
+%		\end{column}
+%	\end{columns}
 \end{frame}
 %\begin{frame}
 %	\frametitle{Results for parameter k}
