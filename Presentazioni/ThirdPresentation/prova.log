@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.9.24)  14 FEB 2022 23:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.9.24)  15 FEB 2022 01:10
 entering extended mode
 **./prova.tex
 (prova.tex
@@ -1805,9 +1805,9 @@ ile (type png)
 <use doublecoupling_chainmeeting/doublecoupling_mu_chain_meeting.png>
 Package pdftex.def Info: doublecoupling_chainmeeting/doublecoupling_mu_chain_me
 eting.png  used on input line 323.
-(pdftex.def)             Requested size: 170.71892pt x 65.44159pt.
+(pdftex.def)             Requested size: 156.49345pt x 71.13177pt.
 
-Overfull \hbox (39.61148pt too wide) in paragraph at lines 323--323
+Overfull \hbox (25.38602pt too wide) in paragraph at lines 323--323
 [][] 
  []
 
@@ -1818,9 +1818,9 @@ File: doublecoupling_pack/doublecoupling_sampling_mu.png Graphic file (type png
 <use doublecoupling_pack/doublecoupling_sampling_mu.png>
 Package pdftex.def Info: doublecoupling_pack/doublecoupling_sampling_mu.png  us
 ed on input line 323.
-(pdftex.def)             Requested size: 170.70569pt x 65.44159pt.
+(pdftex.def)             Requested size: 156.48022pt x 71.13177pt.
 
-Overfull \hbox (39.59825pt too wide) in paragraph at lines 323--323
+Overfull \hbox (25.37279pt too wide) in paragraph at lines 323--323
 [][]  
  []
 
@@ -1831,7 +1831,7 @@ type png)
 <use doublecoupling_pack/doublecoupling_mu_histogram_kernel.png>
 Package pdftex.def Info: doublecoupling_pack/doublecoupling_mu_histogram_kernel
 .png  used on input line 323.
-(pdftex.def)             Requested size: 170.70569pt x 142.26357pt.
+(pdftex.def)             Requested size: 170.70569pt x 113.8082pt.
 
 Overfull \hbox (39.59825pt too wide) in paragraph at lines 323--323
 [][]  
@@ -1863,9 +1863,9 @@ c file (type png)
 <use doublecoupling_chainmeeting/doublecoupling_sigma_chain_meeting.png>
 Package pdftex.def Info: doublecoupling_chainmeeting/doublecoupling_sigma_chain
 _meeting.png  used on input line 345.
-(pdftex.def)             Requested size: 170.71892pt x 65.44159pt.
+(pdftex.def)             Requested size: 156.49345pt x 71.13177pt.
 
-Overfull \hbox (39.61148pt too wide) in paragraph at lines 345--345
+Overfull \hbox (25.38602pt too wide) in paragraph at lines 345--345
 [][] 
  []
 
@@ -1876,9 +1876,9 @@ png)
 <use doublecoupling_pack/doublecoupling_sampling_sigma.png>
 Package pdftex.def Info: doublecoupling_pack/doublecoupling_sampling_sigma.png 
  used on input line 345.
-(pdftex.def)             Requested size: 170.70569pt x 65.44159pt.
+(pdftex.def)             Requested size: 156.48022pt x 71.13177pt.
 
-Overfull \hbox (39.59825pt too wide) in paragraph at lines 345--345
+Overfull \hbox (25.37279pt too wide) in paragraph at lines 345--345
 [][]  
  []
 
@@ -1889,7 +1889,7 @@ e (type png)
 <use doublecoupling_pack/doublecoupling_sigma_histogram_kernel.png>
 Package pdftex.def Info: doublecoupling_pack/doublecoupling_sigma_histogram_ker
 nel.png  used on input line 345.
-(pdftex.def)             Requested size: 170.70569pt x 142.26357pt.
+(pdftex.def)             Requested size: 170.70569pt x 113.8082pt.
 
 Overfull \hbox (39.59825pt too wide) in paragraph at lines 345--345
 [][]  
@@ -2004,9 +2004,9 @@ File: gk_all_pack/gk_all_chain_meeeting_0.png Graphic file (type png)
 <use gk_all_pack/gk_all_chain_meeeting_0.png>
 Package pdftex.def Info: gk_all_pack/gk_all_chain_meeeting_0.png  used on input
  line 508.
-(pdftex.def)             Requested size: 170.70569pt x 71.13177pt.
+(pdftex.def)             Requested size: 156.48022pt x 71.13177pt.
 
-Overfull \hbox (39.59825pt too wide) in paragraph at lines 508--508
+Overfull \hbox (25.37279pt too wide) in paragraph at lines 508--508
 [][] 
  []
 
@@ -2015,9 +2015,9 @@ File: gk_all_pack/gk_all_sampling_0.png Graphic file (type png)
 <use gk_all_pack/gk_all_sampling_0.png>
 Package pdftex.def Info: gk_all_pack/gk_all_sampling_0.png  used on input line 
 508.
-(pdftex.def)             Requested size: 142.25475pt x 71.13177pt.
+(pdftex.def)             Requested size: 156.48022pt x 71.13177pt.
 
-Overfull \hbox (11.14731pt too wide) in paragraph at lines 508--508
+Overfull \hbox (25.37279pt too wide) in paragraph at lines 508--508
 [][]  
  []
 
@@ -2026,7 +2026,7 @@ File: gk_all_pack/gk_all_histogram_kernel_0.png Graphic file (type png)
 <use gk_all_pack/gk_all_histogram_kernel_0.png>
 Package pdftex.def Info: gk_all_pack/gk_all_histogram_kernel_0.png  used on inp
 ut line 508.
-(pdftex.def)             Requested size: 170.70569pt x 142.26357pt.
+(pdftex.def)             Requested size: 170.70569pt x 113.8082pt.
 
 Overfull \hbox (39.59825pt too wide) in paragraph at lines 508--508
 [][]  
@@ -2046,81 +2046,34 @@ t line 508.
 
  <./gk_all_pack/gk_all_chain_meeeting_0.png> <./gk_all_pack/gk_all_sampling_0.p
 ng> <./gk_all_pack/gk_all_histogram_kernel_0.png>]
-<gk_all_pack/gk_all_chain_meeeting_1.png, id=389, 867.24pt x 289.08pt>
-File: gk_all_pack/gk_all_chain_meeeting_1.png Graphic file (type png)
-<use gk_all_pack/gk_all_chain_meeeting_1.png>
-Package pdftex.def Info: gk_all_pack/gk_all_chain_meeeting_1.png  used on input
- line 526.
-(pdftex.def)             Requested size: 170.70569pt x 71.13177pt.
-
-Overfull \hbox (39.59825pt too wide) in paragraph at lines 526--526
-[][] 
- []
-
-<gk_all_pack/gk_all_sampling_1.png, id=390, 867.24pt x 289.08pt>
-File: gk_all_pack/gk_all_sampling_1.png Graphic file (type png)
-<use gk_all_pack/gk_all_sampling_1.png>
-Package pdftex.def Info: gk_all_pack/gk_all_sampling_1.png  used on input line 
-526.
-(pdftex.def)             Requested size: 142.25475pt x 71.13177pt.
-
-Overfull \hbox (11.14731pt too wide) in paragraph at lines 526--526
-[][]  
- []
-
-<gk_all_pack/gk_all_histogram_kernel_1.png, id=391, 867.24pt x 289.08pt>
-File: gk_all_pack/gk_all_histogram_kernel_1.png Graphic file (type png)
-<use gk_all_pack/gk_all_histogram_kernel_1.png>
-Package pdftex.def Info: gk_all_pack/gk_all_histogram_kernel_1.png  used on inp
-ut line 526.
-(pdftex.def)             Requested size: 170.70569pt x 142.26357pt.
-
-Overfull \hbox (39.59825pt too wide) in paragraph at lines 526--526
-[][]  
- []
-
-File: beamerthemepolimi_img//decoration.pdf Graphic file (type pdf)
-<use beamerthemepolimi_img//decoration.pdf>
-Package pdftex.def Info: beamerthemepolimi_img//decoration.pdf  used on input l
-ine 526.
-(pdftex.def)             Requested size: 364.19536pt x 7.19064pt.
-File: beamerthemepolimi_img//logo_bandiera.png Graphic file (type png)
-<use beamerthemepolimi_img//logo_bandiera.png>
-Package pdftex.def Info: beamerthemepolimi_img//logo_bandiera.png  used on inpu
-t line 526.
-(pdftex.def)             Requested size: 87.2322pt x 4.89998pt.
-[21
-
- <./gk_all_pack/gk_all_chain_meeeting_1.png> <./gk_all_pack/gk_all_sampling_1.p
-ng> <./gk_all_pack/gk_all_histogram_kernel_1.png>]
-<gk_all_pack/gk_all_chain_meeeting_2.png, id=401, 867.24pt x 289.08pt>
+<gk_all_pack/gk_all_chain_meeeting_2.png, id=389, 867.24pt x 289.08pt>
 File: gk_all_pack/gk_all_chain_meeeting_2.png Graphic file (type png)
 <use gk_all_pack/gk_all_chain_meeeting_2.png>
 Package pdftex.def Info: gk_all_pack/gk_all_chain_meeeting_2.png  used on input
  line 544.
-(pdftex.def)             Requested size: 170.70569pt x 71.13177pt.
+(pdftex.def)             Requested size: 156.48022pt x 71.13177pt.
 
-Overfull \hbox (39.59825pt too wide) in paragraph at lines 544--544
+Overfull \hbox (25.37279pt too wide) in paragraph at lines 544--544
 [][] 
  []
 
-<gk_all_pack/gk_all_sampling_2.png, id=402, 867.24pt x 289.08pt>
+<gk_all_pack/gk_all_sampling_2.png, id=390, 867.24pt x 289.08pt>
 File: gk_all_pack/gk_all_sampling_2.png Graphic file (type png)
 <use gk_all_pack/gk_all_sampling_2.png>
 Package pdftex.def Info: gk_all_pack/gk_all_sampling_2.png  used on input line 
 544.
-(pdftex.def)             Requested size: 142.25475pt x 71.13177pt.
+(pdftex.def)             Requested size: 156.48022pt x 71.13177pt.
 
-Overfull \hbox (11.14731pt too wide) in paragraph at lines 544--544
+Overfull \hbox (25.37279pt too wide) in paragraph at lines 544--544
 [][]  
  []
 
-<gk_all_pack/gk_all_histogram_kernel_2.png, id=403, 867.24pt x 289.08pt>
+<gk_all_pack/gk_all_histogram_kernel_2.png, id=391, 867.24pt x 289.08pt>
 File: gk_all_pack/gk_all_histogram_kernel_2.png Graphic file (type png)
 <use gk_all_pack/gk_all_histogram_kernel_2.png>
 Package pdftex.def Info: gk_all_pack/gk_all_histogram_kernel_2.png  used on inp
 ut line 544.
-(pdftex.def)             Requested size: 170.70569pt x 142.26357pt.
+(pdftex.def)             Requested size: 170.70569pt x 113.8082pt.
 
 Overfull \hbox (39.59825pt too wide) in paragraph at lines 544--544
 [][]  
@@ -2136,57 +2089,10 @@ File: beamerthemepolimi_img//logo_bandiera.png Graphic file (type png)
 Package pdftex.def Info: beamerthemepolimi_img//logo_bandiera.png  used on inpu
 t line 544.
 (pdftex.def)             Requested size: 87.2322pt x 4.89998pt.
-[22
+[21
 
  <./gk_all_pack/gk_all_chain_meeeting_2.png> <./gk_all_pack/gk_all_sampling_2.p
-ng> <./gk_all_pack/gk_all_histogram_kernel_2.png>]
-<gk_all_pack/gk_all_chain_meeeting_3.png, id=413, 867.24pt x 289.08pt>
-File: gk_all_pack/gk_all_chain_meeeting_3.png Graphic file (type png)
-<use gk_all_pack/gk_all_chain_meeeting_3.png>
-Package pdftex.def Info: gk_all_pack/gk_all_chain_meeeting_3.png  used on input
- line 562.
-(pdftex.def)             Requested size: 170.70569pt x 71.13177pt.
-
-Overfull \hbox (39.59825pt too wide) in paragraph at lines 562--562
-[][] 
- []
-
-<gk_all_pack/gk_all_sampling_3.png, id=414, 867.24pt x 289.08pt>
-File: gk_all_pack/gk_all_sampling_3.png Graphic file (type png)
-<use gk_all_pack/gk_all_sampling_3.png>
-Package pdftex.def Info: gk_all_pack/gk_all_sampling_3.png  used on input line 
-562.
-(pdftex.def)             Requested size: 142.25475pt x 71.13177pt.
-
-Overfull \hbox (11.14731pt too wide) in paragraph at lines 562--562
-[][]  
- []
-
-<gk_all_pack/gk_all_histogram_kernel_3.png, id=415, 867.24pt x 289.08pt>
-File: gk_all_pack/gk_all_histogram_kernel_3.png Graphic file (type png)
-<use gk_all_pack/gk_all_histogram_kernel_3.png>
-Package pdftex.def Info: gk_all_pack/gk_all_histogram_kernel_3.png  used on inp
-ut line 562.
-(pdftex.def)             Requested size: 170.70569pt x 142.26357pt.
-
-Overfull \hbox (39.59825pt too wide) in paragraph at lines 562--562
-[][]  
- []
-
-File: beamerthemepolimi_img//decoration.pdf Graphic file (type pdf)
-<use beamerthemepolimi_img//decoration.pdf>
-Package pdftex.def Info: beamerthemepolimi_img//decoration.pdf  used on input l
-ine 562.
-(pdftex.def)             Requested size: 364.19536pt x 7.19064pt.
-File: beamerthemepolimi_img//logo_bandiera.png Graphic file (type png)
-<use beamerthemepolimi_img//logo_bandiera.png>
-Package pdftex.def Info: beamerthemepolimi_img//logo_bandiera.png  used on inpu
-t line 562.
-(pdftex.def)             Requested size: 87.2322pt x 4.89998pt.
-[23
-
- <./gk_all_pack/gk_all_chain_meeeting_3.png> <./gk_all_pack/gk_all_sampling_3.p
-ng> <./gk_all_pack/gk_all_histogram_kernel_3.png>] (prova.bbl)
+ng> <./gk_all_pack/gk_all_histogram_kernel_2.png>] (prova.bbl)
 File: beamerthemepolimi_img//decoration.pdf Graphic file (type pdf)
 <use beamerthemepolimi_img//decoration.pdf>
 Package pdftex.def Info: beamerthemepolimi_img//decoration.pdf  used on input l
@@ -2197,7 +2103,7 @@ File: beamerthemepolimi_img//logo_bandiera.png Graphic file (type png)
 Package pdftex.def Info: beamerthemepolimi_img//logo_bandiera.png  used on inpu
 t line 567.
 (pdftex.def)             Requested size: 87.2322pt x 4.89998pt.
- [24
+ [22
 
 ]
 \tf@nav=\write6
@@ -2215,10 +2121,10 @@ Package rerunfilecheck Info: File `prova.out' has not changed.
 (rerunfilecheck)             Checksum: 972A1F44DF2ECC2A63143310EF2420BE;644.
  ) 
 Here is how much of TeX's memory you used:
- 26889 strings out of 479334
- 521297 string characters out of 2857084
- 908941 words of memory out of 3000000
- 43595 multiletter control sequences out of 15000+200000
+ 26817 strings out of 479334
+ 519041 string characters out of 2857084
+ 908573 words of memory out of 3000000
+ 43533 multiletter control sequences out of 15000+200000
  536532 words of font info for 121 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  131i,18n,132p,1319b,909s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -2244,9 +2150,9 @@ sers/franc/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy7.pfb><C:/Us
 ers/franc/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Use
 rs/franc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm
 10.pfb>
-Output written on prova.pdf (24 pages, 2094757 bytes).
+Output written on prova.pdf (22 pages, 1931594 bytes).
 PDF statistics:
- 511 PDF objects out of 1000 (max. 8388607)
- 60 named destinations out of 1000 (max. 500000)
- 682 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 487 PDF objects out of 1000 (max. 8388607)
+ 56 named destinations out of 1000 (max. 500000)
+ 652 words of extra memory for PDF output out of 10000 (max. 10000000)
 
